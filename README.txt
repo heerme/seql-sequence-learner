@@ -3,6 +3,7 @@ Installation
     * Requirements
           o C++ compiler (gcc 3.4 or higher)
           o POSIX getopt library.
+    
     * To install SEQL download seqlv2.0.tar.gz and unpack it with
 
       tar -zxvf seql-v2.0.tar.gz

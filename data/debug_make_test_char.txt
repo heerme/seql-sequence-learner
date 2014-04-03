@@ -1,0 +1,3334 @@
+./seql_learn -n 1 -v 4 data/toy.char.train seql.toy.char.model
+
+Parameters used: obective fct: 0 T: 5000 minpat: 1 maxpat: 4294967295 minsup: 1 maxgap: 0 token_type: 1 traversal_strategy: 1 convergence_threshold: 0.0005 C (regularizer value): 1 alpha (weight on l1_vs_l2_regularizer): 0.2 verbosity: 4
+
+read() input data....
+# positive samples: 2
+# negative samples: 2
+end read() input data....( 0 seconds; 0 minutes )
+prepare inverted index for unigrams ( 0 seconds; 0.00000000 minutes )
+distinct unigram:a
+distinct unigram:b
+distinct unigram:c
+distinct unigram:d
+# distinct unigrams: 4 ( 0 seconds; 0.00000000 minutes )
+start loss: 2.77258872
+current ngram rule: a
+location size: 6
+
+gradient (before regularizer): -0.50000000
+upos (before regularizer): -1.00000000
+uneg (before regularizer): 0.50000000
+tau: 0.00000000
+
+current best ngram rule: a
+gradient: -0.50000000
+
+current ngram rule: ab
+location size: 6
+
+gradient (before regularizer): -0.50000000
+upos (before regularizer): -1.00000000
+uneg (before regularizer): 0.50000000
+tau: 0.50000000
+current ngram rule: abc
+location size: 2
+
+gradient (before regularizer): -0.50000000
+upos (before regularizer): -0.50000000
+uneg (before regularizer): 0.00000000
+tau: 0.50000000
+
+minsup || upper bound: pruned!
+
+current ngram rule: abd
+location size: 2
+
+gradient (before regularizer): 0.50000000
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.50000000
+tau: 0.50000000
+
+minsup || upper bound: pruned!
+
+current ngram rule: b
+location size: 8
+
+gradient (before regularizer): 0.00000000
+upos (before regularizer): -1.00000000
+uneg (before regularizer): 1.00000000
+tau: 0.50000000
+current ngram rule: bc
+location size: 4
+
+gradient (before regularizer): 0.00000000
+upos (before regularizer): -0.50000000
+uneg (before regularizer): 0.50000000
+tau: 0.50000000
+
+minsup || upper bound: pruned!
+
+current ngram rule: bd
+location size: 2
+
+gradient (before regularizer): 0.50000000
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.50000000
+tau: 0.50000000
+
+minsup || upper bound: pruned!
+
+current ngram rule: c
+location size: 4
+
+gradient (before regularizer): 0.00000000
+upos (before regularizer): -0.50000000
+uneg (before regularizer): 0.50000000
+tau: 0.50000000
+
+minsup || upper bound: pruned!
+
+current ngram rule: d
+location size: 6
+
+gradient (before regularizer): 0.50000000
+upos (before regularizer): -0.50000000
+uneg (before regularizer): 1.00000000
+tau: 0.50000000
+found best ngram! 
+rule.gradient: -0.50000000 (per iter: 0 seconds; 0.00000000 minutes; total time:0.00000000 minutes)
+rule.ngram: a
+rule.gradient: -0.50000000
+exponent of epsilon: 0.00000000
+epsilon: 0.00100000
+n: 0
+n: 1
+n: 2
+n: 3
+n: 4
+n: 5
+n: 6
+n: 7
+n: 8
+n: 9
+Finished doubling epsilon! The monotonicity loss_n+1 < loss_n is broken!
+current range size: 1.15200000
+current interpolation iteration: 0
+current interpolation iteration: 1
+current interpolation iteration: 2
+current interpolation iteration: 3
+current interpolation iteration: 4
+current interpolation iteration: 5
+current interpolation iteration: 6
+current interpolation iteration: 7
+current interpolation iteration: 8
+current interpolation iteration: 9
+loss: 2.72764242
+penalty_term: 0.02314625
+0 1 1/5/9 0.09693750 a
+loss + penalty term: 2.75078867
+current ngram rule: a
+location size: 3
+
+gradient (before regularizer): -0.42735375
+upos (before regularizer): -0.95156917
+uneg (before regularizer): 0.52421542
+tau: 0.00000000
+gradient after regularizer: -0.14980375
+existing feature starting with current ngram rule prefix: a, 0.09693750,  sign: 1
+current_upos: -0.67401917
+current_uneg: 0.80176542
+tau: 0.00000000
+
+current best ngram rule: a
+gradient: -0.14980375
+
+ !next.empty()
+current ngram rule: ab
+location size: 3
+
+gradient (before regularizer): -0.42735375
+upos (before regularizer): -0.95156917
+uneg (before regularizer): 0.52421542
+tau: 0.14980375
+
+current best ngram rule: ab
+gradient: -0.42735375
+
+ !next.empty()
+current ngram rule: abc
+location size: 2
+
+gradient (before regularizer): -0.47578458
+upos (before regularizer): -0.47578458
+uneg (before regularizer): 0.00000000
+tau: 0.42735375
+
+current best ngram rule: abc
+gradient: -0.47578458
+
+current ngram rule: abcd
+location size: 2
+
+gradient (before regularizer): -0.47578458
+upos (before regularizer): -0.47578458
+uneg (before regularizer): 0.00000000
+tau: 0.47578458
+
+minsup || upper bound: pruned!
+
+current ngram rule: abd
+location size: 2
+
+gradient (before regularizer): 0.52421542
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.52421542
+tau: 0.47578458
+
+current best ngram rule: abd
+gradient: 0.52421542
+
+current ngram rule: b
+location size: 4
+
+gradient (before regularizer): 0.07264625
+upos (before regularizer): -0.95156917
+uneg (before regularizer): 1.02421542
+tau: 0.52421542
+ !next.empty()
+current ngram rule: bc
+location size: 4
+
+gradient (before regularizer): 0.02421542
+upos (before regularizer): -0.47578458
+uneg (before regularizer): 0.50000000
+tau: 0.52421542
+
+minsup || upper bound: pruned!
+
+current ngram rule: bd
+location size: 2
+
+gradient (before regularizer): 0.52421542
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.52421542
+tau: 0.52421542
+
+minsup || upper bound: pruned!
+
+current ngram rule: c
+location size: 4
+
+gradient (before regularizer): 0.02421542
+upos (before regularizer): -0.47578458
+uneg (before regularizer): 0.50000000
+tau: 0.52421542
+
+minsup || upper bound: pruned!
+
+current ngram rule: d
+location size: 3
+
+gradient (before regularizer): 0.54843083
+upos (before regularizer): -0.47578458
+uneg (before regularizer): 1.02421542
+tau: 0.52421542
+
+current best ngram rule: d
+gradient: 0.54843083
+
+found best ngram! 
+rule.gradient: 0.54843083 (per iter: 0 seconds; 0.00000000 minutes; total time:0.00000000 minutes)
+rule.ngram: d
+rule.gradient: 0.54843083
+exponent of epsilon: 0.00000000
+epsilon: 0.00100000
+n: 0
+n: 1
+n: 2
+n: 3
+n: 4
+n: 5
+n: 6
+n: 7
+n: 8
+n: 9
+Finished doubling epsilon! The monotonicity loss_n+1 < loss_n is broken!
+current range size: 1.36052213
+current interpolation iteration: 0
+current interpolation iteration: 1
+current interpolation iteration: 2
+current interpolation iteration: 3
+current interpolation iteration: 4
+current interpolation iteration: 5
+current interpolation iteration: 6
+current interpolation iteration: 7
+current interpolation iteration: 8
+current interpolation iteration: 9
+current interpolation iteration: 10
+loss: 2.65815066
+penalty_term: 0.05902497
+1 2 5/4/10 -0.14012408 d
+loss + penalty term: 2.71717563
+current ngram rule: a
+location size: 3
+
+gradient (before regularizer): -0.49737452
+upos (before regularizer): -0.98657955
+uneg (before regularizer): 0.48920503
+tau: 0.00000000
+gradient after regularizer: -0.21982452
+existing feature starting with current ngram rule prefix: a, 0.09693750,  sign: 1
+current_upos: -0.70902955
+current_uneg: 0.76675503
+tau: 0.00000000
+
+current best ngram rule: a
+gradient: -0.21982452
+
+ !next.empty()
+current ngram rule: ab
+location size: 3
+
+gradient (before regularizer): -0.49737452
+upos (before regularizer): -0.98657955
+uneg (before regularizer): 0.48920503
+tau: 0.21982452
+
+current best ngram rule: ab
+gradient: -0.49737452
+
+ !next.empty()
+current ngram rule: abc
+location size: 1
+
+gradient (before regularizer): -0.51079497
+upos (before regularizer): -0.51079497
+uneg (before regularizer): 0.00000000
+tau: 0.49737452
+
+current best ngram rule: abc
+gradient: -0.51079497
+
+ !next.empty()
+current ngram rule: abcd
+location size: 2
+
+gradient (before regularizer): -0.51079497
+upos (before regularizer): -0.51079497
+uneg (before regularizer): 0.00000000
+tau: 0.51079497
+
+minsup || upper bound: pruned!
+
+current ngram rule: abd
+location size: 1
+
+gradient (before regularizer): 0.48920503
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.48920503
+tau: 0.51079497
+
+minsup || upper bound: pruned!
+
+current ngram rule: b
+location size: 4
+
+gradient (before regularizer): -0.03234833
+upos (before regularizer): -0.98657955
+uneg (before regularizer): 0.95423122
+tau: 0.51079497
+ !next.empty()
+current ngram rule: bc
+location size: 4
+
+gradient (before regularizer): -0.04576878
+upos (before regularizer): -0.51079497
+uneg (before regularizer): 0.46502619
+tau: 0.51079497
+
+minsup || upper bound: pruned!
+
+current ngram rule: bd
+location size: 2
+
+gradient (before regularizer): 0.48920503
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.48920503
+tau: 0.51079497
+
+minsup || upper bound: pruned!
+
+current ngram rule: c
+location size: 4
+
+gradient (before regularizer): -0.04576878
+upos (before regularizer): -0.51079497
+uneg (before regularizer): 0.46502619
+tau: 0.51079497
+
+minsup || upper bound: pruned!
+
+current ngram rule: d
+location size: 3
+
+gradient (before regularizer): 0.44343625
+upos (before regularizer): -0.51079497
+uneg (before regularizer): 0.95423122
+tau: 0.51079497
+gradient after regularizer: 0.13133699
+existing feature starting with current ngram rule prefix: d, -0.14012408,  sign: -1
+current_upos: -0.82289423
+current_uneg: 0.64213196
+tau: 0.51079497
+found best ngram! 
+rule.gradient: -0.51079497 (per iter: 0 seconds; 0.00000000 minutes; total time:0.00000000 minutes)
+rule.ngram: abc
+rule.gradient: -0.51079497
+exponent of epsilon: 0.00000000
+epsilon: 0.00100000
+n: 0
+n: 1
+n: 2
+n: 3
+n: 4
+n: 5
+n: 6
+n: 7
+n: 8
+n: 9
+Finished doubling epsilon! The monotonicity loss_n+1 < loss_n is broken!
+current range size: 0.67253869
+current interpolation iteration: 0
+current interpolation iteration: 1
+current interpolation iteration: 2
+current interpolation iteration: 3
+current interpolation iteration: 4
+current interpolation iteration: 5
+current interpolation iteration: 6
+current interpolation iteration: 7
+current interpolation iteration: 8
+current interpolation iteration: 9
+loss: 2.58522829
+penalty_term: 0.09742814
+2 3 3/5/10 0.14813054 abc
+loss + penalty term: 2.68265643
+current ngram rule: a
+location size: 3
+
+gradient (before regularizer): -0.46036761
+upos (before regularizer): -0.94957265
+uneg (before regularizer): 0.48920503
+tau: 0.00000000
+gradient after regularizer: -0.18281761
+existing feature starting with current ngram rule prefix: a, 0.09693750,  sign: 1
+current_upos: -0.67202265
+current_uneg: 0.76675503
+tau: 0.00000000
+
+current best ngram rule: a
+gradient: -0.18281761
+
+ !next.empty()
+current ngram rule: ab
+location size: 3
+
+gradient (before regularizer): -0.46036761
+upos (before regularizer): -0.94957265
+uneg (before regularizer): 0.48920503
+tau: 0.18281761
+gradient after regularizer: -0.46036761
+existing feature starting with current ngram rule prefix: abc, 0.14813054,  sign: 1
+current_upos: -0.63106821
+current_uneg: 0.80770947
+tau: 0.18281761
+
+current best ngram rule: ab
+gradient: -0.46036761
+
+ !next.empty()
+current ngram rule: abc
+location size: 1
+
+gradient (before regularizer): -0.47378806
+upos (before regularizer): -0.47378806
+uneg (before regularizer): 0.00000000
+tau: 0.46036761
+gradient after regularizer: -0.15528363
+existing feature starting with current ngram rule prefix: abc, 0.14813054,  sign: 1
+current_upos: -0.15528363
+current_uneg: 0.31850443
+tau: 0.46036761
+
+minsup || upper bound: pruned!
+
+current ngram rule: abd
+location size: 1
+
+gradient (before regularizer): 0.48920503
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.48920503
+tau: 0.46036761
+
+current best ngram rule: abd
+gradient: 0.48920503
+
+current ngram rule: b
+location size: 4
+
+gradient (before regularizer): 0.00465857
+upos (before regularizer): -0.94957265
+uneg (before regularizer): 0.95423122
+tau: 0.48920503
+ !next.empty()
+current ngram rule: bc
+location size: 4
+
+gradient (before regularizer): -0.00876187
+upos (before regularizer): -0.47378806
+uneg (before regularizer): 0.46502619
+tau: 0.48920503
+
+minsup || upper bound: pruned!
+
+current ngram rule: bd
+location size: 2
+
+gradient (before regularizer): 0.48920503
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.48920503
+tau: 0.48920503
+
+minsup || upper bound: pruned!
+
+current ngram rule: c
+location size: 4
+
+gradient (before regularizer): -0.00876187
+upos (before regularizer): -0.47378806
+uneg (before regularizer): 0.46502619
+tau: 0.48920503
+
+minsup || upper bound: pruned!
+
+current ngram rule: d
+location size: 3
+
+gradient (before regularizer): 0.48044316
+upos (before regularizer): -0.47378806
+uneg (before regularizer): 0.95423122
+tau: 0.48920503
+gradient after regularizer: 0.16834390
+existing feature starting with current ngram rule prefix: d, -0.14012408,  sign: -1
+current_upos: -0.78588732
+current_uneg: 0.64213196
+tau: 0.48920503
+found best ngram! 
+rule.gradient: 0.48920503 (per iter: 0 seconds; 0.00000000 minutes; total time:0.00000000 minutes)
+rule.ngram: abd
+rule.gradient: 0.48920503
+exponent of epsilon: 0.00000000
+epsilon: 0.00100000
+n: 0
+n: 1
+n: 2
+n: 3
+n: 4
+n: 5
+n: 6
+n: 7
+n: 8
+n: 9
+Finished doubling epsilon! The monotonicity loss_n+1 < loss_n is broken!
+current range size: 0.71771501
+current interpolation iteration: 0
+current interpolation iteration: 1
+current interpolation iteration: 2
+current interpolation iteration: 3
+current interpolation iteration: 4
+current interpolation iteration: 5
+current interpolation iteration: 6
+current interpolation iteration: 7
+current interpolation iteration: 8
+loss: 2.52011324
+penalty_term: 0.13263203
+3 4 3/4/9 -0.13795582 abd
+loss + penalty term: 2.65274527
+current ngram rule: a
+location size: 3
+
+gradient (before regularizer): -0.49473482
+upos (before regularizer): -0.94957265
+uneg (before regularizer): 0.45483782
+tau: 0.00000000
+gradient after regularizer: -0.21718482
+existing feature starting with current ngram rule prefix: a, 0.09693750,  sign: 1
+current_upos: -0.67202265
+current_uneg: 0.73238782
+tau: 0.00000000
+
+current best ngram rule: a
+gradient: -0.21718482
+
+ !next.empty()
+current ngram rule: ab
+location size: 3
+
+gradient (before regularizer): -0.49473482
+upos (before regularizer): -0.94957265
+uneg (before regularizer): 0.45483782
+tau: 0.21718482
+gradient after regularizer: -0.49473482
+existing feature starting with current ngram rule prefix: abc, 0.14813054,  sign: 1
+current_upos: -0.63106821
+current_uneg: 0.77334226
+tau: 0.21718482
+
+current best ngram rule: ab
+gradient: -0.49473482
+
+ !next.empty()
+current ngram rule: abc
+location size: 1
+
+gradient (before regularizer): -0.47378806
+upos (before regularizer): -0.47378806
+uneg (before regularizer): 0.00000000
+tau: 0.49473482
+gradient after regularizer: -0.15528363
+existing feature starting with current ngram rule prefix: abc, 0.14813054,  sign: 1
+current_upos: -0.15528363
+current_uneg: 0.31850443
+tau: 0.49473482
+
+minsup || upper bound: pruned!
+
+current ngram rule: abd
+location size: 1
+
+gradient (before regularizer): 0.45483782
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.45483782
+tau: 0.49473482
+gradient after regularizer: 0.14447317
+existing feature starting with current ngram rule prefix: abd, -0.13795582,  sign: -1
+current_upos: -0.31036466
+current_uneg: 0.14447317
+tau: 0.49473482
+
+minsup || upper bound: pruned!
+
+current ngram rule: b
+location size: 4
+
+gradient (before regularizer): -0.02970863
+upos (before regularizer): -0.94957265
+uneg (before regularizer): 0.91986401
+tau: 0.49473482
+ !next.empty()
+current ngram rule: bc
+location size: 4
+
+gradient (before regularizer): -0.00876187
+upos (before regularizer): -0.47378806
+uneg (before regularizer): 0.46502619
+tau: 0.49473482
+
+minsup || upper bound: pruned!
+
+current ngram rule: bd
+location size: 2
+
+gradient (before regularizer): 0.45483782
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.45483782
+tau: 0.49473482
+
+minsup || upper bound: pruned!
+
+current ngram rule: c
+location size: 4
+
+gradient (before regularizer): -0.00876187
+upos (before regularizer): -0.47378806
+uneg (before regularizer): 0.46502619
+tau: 0.49473482
+
+minsup || upper bound: pruned!
+
+current ngram rule: d
+location size: 3
+
+gradient (before regularizer): 0.44607595
+upos (before regularizer): -0.47378806
+uneg (before regularizer): 0.91986401
+tau: 0.49473482
+gradient after regularizer: 0.13397669
+existing feature starting with current ngram rule prefix: d, -0.14012408,  sign: -1
+current_upos: -0.78588732
+current_uneg: 0.60776475
+tau: 0.49473482
+found best ngram! 
+rule.gradient: -0.49473482 (per iter: 0 seconds; 0.00000000 minutes; total time:0.00000000 minutes)
+rule.ngram: ab
+rule.gradient: -0.49473482
+exponent of epsilon: 0.00000000
+epsilon: 0.00100000
+n: 0
+n: 1
+n: 2
+n: 3
+n: 4
+n: 5
+n: 6
+n: 7
+n: 8
+n: 9
+Finished doubling epsilon! The monotonicity loss_n+1 < loss_n is broken!
+current range size: 1.27999311
+current interpolation iteration: 0
+current interpolation iteration: 1
+current interpolation iteration: 2
+current interpolation iteration: 3
+current interpolation iteration: 4
+current interpolation iteration: 5
+current interpolation iteration: 6
+current interpolation iteration: 7
+current interpolation iteration: 8
+current interpolation iteration: 9
+current interpolation iteration: 10
+loss: 2.46353691
+penalty_term: 0.16430424
+4 5 2/5/9 0.12640475 ab
+loss + penalty term: 2.62784116
+current ngram rule: a
+location size: 3
+
+gradient (before regularizer): -0.40049579
+upos (before regularizer): -0.88681480
+uneg (before regularizer): 0.48631900
+tau: 0.00000000
+gradient after regularizer: -0.12294579
+existing feature starting with current ngram rule prefix: a, 0.09693750,  sign: 1
+current_upos: -0.60926480
+current_uneg: 0.76386900
+tau: 0.00000000
+
+current best ngram rule: a
+gradient: -0.12294579
+
+ !next.empty()
+current ngram rule: ab
+location size: 3
+
+gradient (before regularizer): -0.40049579
+upos (before regularizer): -0.88681480
+uneg (before regularizer): 0.48631900
+tau: 0.12294579
+gradient after regularizer: -0.09937200
+existing feature starting with current ngram rule prefix: ab, 0.12640475,  sign: 1
+current_upos: -0.58569100
+current_uneg: 0.78744280
+tau: 0.12294579
+ !next.empty()
+current ngram rule: abc
+location size: 1
+
+gradient (before regularizer): -0.44241941
+upos (before regularizer): -0.44241941
+uneg (before regularizer): 0.00000000
+tau: 0.12294579
+gradient after regularizer: -0.12391498
+existing feature starting with current ngram rule prefix: abc, 0.14813054,  sign: 1
+current_upos: -0.12391498
+current_uneg: 0.31850443
+tau: 0.12294579
+
+current best ngram rule: abc
+gradient: -0.12391498
+
+ !next.empty()
+current ngram rule: abcd
+location size: 2
+
+gradient (before regularizer): -0.44241941
+upos (before regularizer): -0.44241941
+uneg (before regularizer): 0.00000000
+tau: 0.12391498
+
+current best ngram rule: abcd
+gradient: -0.44241941
+
+current ngram rule: abd
+location size: 1
+
+gradient (before regularizer): 0.48631900
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.48631900
+tau: 0.44241941
+gradient after regularizer: 0.17595435
+existing feature starting with current ngram rule prefix: abd, -0.13795582,  sign: -1
+current_upos: -0.31036466
+current_uneg: 0.17595435
+tau: 0.44241941
+
+minsup || upper bound: pruned!
+
+current ngram rule: b
+location size: 4
+
+gradient (before regularizer): 0.06453039
+upos (before regularizer): -0.88681480
+uneg (before regularizer): 0.95134519
+tau: 0.44241941
+ !next.empty()
+current ngram rule: bc
+location size: 4
+
+gradient (before regularizer): 0.02260677
+upos (before regularizer): -0.44241941
+uneg (before regularizer): 0.46502619
+tau: 0.44241941
+current ngram rule: bcd
+location size: 4
+
+gradient (before regularizer): 0.02260677
+upos (before regularizer): -0.44241941
+uneg (before regularizer): 0.46502619
+tau: 0.44241941
+current ngram rule: bd
+location size: 2
+
+gradient (before regularizer): 0.48631900
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.48631900
+tau: 0.44241941
+
+current best ngram rule: bd
+gradient: 0.48631900
+
+current ngram rule: c
+location size: 4
+
+gradient (before regularizer): 0.02260677
+upos (before regularizer): -0.44241941
+uneg (before regularizer): 0.46502619
+tau: 0.48631900
+
+minsup || upper bound: pruned!
+
+current ngram rule: d
+location size: 3
+
+gradient (before regularizer): 0.50892578
+upos (before regularizer): -0.44241941
+uneg (before regularizer): 0.95134519
+tau: 0.48631900
+gradient after regularizer: 0.19682651
+existing feature starting with current ngram rule prefix: d, -0.14012408,  sign: -1
+current_upos: -0.75451868
+current_uneg: 0.63924593
+tau: 0.48631900
+found best ngram! 
+rule.gradient: 0.48631900 (per iter: 0 seconds; 0.00000000 minutes; total time:0.00000000 minutes)
+rule.ngram: bd
+rule.gradient: 0.48631900
+exponent of epsilon: 0.00000000
+epsilon: 0.00100000
+n: 0
+n: 1
+n: 2
+n: 3
+n: 4
+n: 5
+n: 6
+n: 7
+n: 8
+n: 9
+Finished doubling epsilon! The monotonicity loss_n+1 < loss_n is broken!
+current range size: 0.96830803
+current interpolation iteration: 0
+current interpolation iteration: 1
+current interpolation iteration: 2
+current interpolation iteration: 3
+current interpolation iteration: 4
+current interpolation iteration: 5
+current interpolation iteration: 6
+current interpolation iteration: 7
+current interpolation iteration: 8
+loss: 2.39940657
+penalty_term: 0.19910527
+5 6 4/2/11 -0.13665564 bd
+loss + penalty term: 2.59851184
+current ngram rule: a
+location size: 3
+
+gradient (before regularizer): -0.43451759
+upos (before regularizer): -0.88681480
+uneg (before regularizer): 0.45229721
+tau: 0.00000000
+gradient after regularizer: -0.15696759
+existing feature starting with current ngram rule prefix: a, 0.09693750,  sign: 1
+current_upos: -0.60926480
+current_uneg: 0.72984721
+tau: 0.00000000
+
+current best ngram rule: a
+gradient: -0.15696759
+
+ !next.empty()
+current ngram rule: ab
+location size: 3
+
+gradient (before regularizer): -0.43451759
+upos (before regularizer): -0.88681480
+uneg (before regularizer): 0.45229721
+tau: 0.15696759
+gradient after regularizer: -0.13339379
+existing feature starting with current ngram rule prefix: ab, 0.12640475,  sign: 1
+current_upos: -0.58569100
+current_uneg: 0.75342100
+tau: 0.15696759
+ !next.empty()
+current ngram rule: abc
+location size: 1
+
+gradient (before regularizer): -0.44241941
+upos (before regularizer): -0.44241941
+uneg (before regularizer): 0.00000000
+tau: 0.15696759
+gradient after regularizer: -0.12391498
+existing feature starting with current ngram rule prefix: abc, 0.14813054,  sign: 1
+current_upos: -0.12391498
+current_uneg: 0.31850443
+tau: 0.15696759
+ !next.empty()
+current ngram rule: abcd
+location size: 1
+
+gradient (before regularizer): -0.44241941
+upos (before regularizer): -0.44241941
+uneg (before regularizer): 0.00000000
+tau: 0.15696759
+
+current best ngram rule: abcd
+gradient: -0.44241941
+
+current ngram rule: abd
+location size: 1
+
+gradient (before regularizer): 0.45229721
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.45229721
+tau: 0.44241941
+gradient after regularizer: 0.14193255
+existing feature starting with current ngram rule prefix: abd, -0.13795582,  sign: -1
+current_upos: -0.31036466
+current_uneg: 0.14193255
+tau: 0.44241941
+
+minsup || upper bound: pruned!
+
+current ngram rule: b
+location size: 4
+
+gradient (before regularizer): 0.03050860
+upos (before regularizer): -0.88681480
+uneg (before regularizer): 0.91732339
+tau: 0.44241941
+gradient after regularizer: 0.03050860
+existing feature starting with current ngram rule prefix: bd, -0.13665564,  sign: -1
+current_upos: -1.19613931
+current_uneg: 0.60799888
+tau: 0.44241941
+ !next.empty()
+current ngram rule: bc
+location size: 2
+
+gradient (before regularizer): 0.02260677
+upos (before regularizer): -0.44241941
+uneg (before regularizer): 0.46502619
+tau: 0.44241941
+ !next.empty()
+current ngram rule: bcd
+location size: 2
+
+gradient (before regularizer): 0.02260677
+upos (before regularizer): -0.44241941
+uneg (before regularizer): 0.46502619
+tau: 0.44241941
+current ngram rule: bd
+location size: 1
+
+gradient (before regularizer): 0.45229721
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.45229721
+tau: 0.44241941
+gradient after regularizer: 0.14297270
+existing feature starting with current ngram rule prefix: bd, -0.13665564,  sign: -1
+current_upos: -0.30932451
+current_uneg: 0.14297270
+tau: 0.44241941
+
+minsup || upper bound: pruned!
+
+current ngram rule: c
+location size: 4
+
+gradient (before regularizer): 0.02260677
+upos (before regularizer): -0.44241941
+uneg (before regularizer): 0.46502619
+tau: 0.44241941
+current ngram rule: cd
+location size: 4
+
+gradient (before regularizer): 0.02260677
+upos (before regularizer): -0.44241941
+uneg (before regularizer): 0.46502619
+tau: 0.44241941
+current ngram rule: d
+location size: 3
+
+gradient (before regularizer): 0.47490398
+upos (before regularizer): -0.44241941
+uneg (before regularizer): 0.91732339
+tau: 0.44241941
+gradient after regularizer: 0.16280472
+existing feature starting with current ngram rule prefix: d, -0.14012408,  sign: -1
+current_upos: -0.75451868
+current_uneg: 0.60522413
+tau: 0.44241941
+found best ngram! 
+rule.gradient: -0.44241941 (per iter: 0 seconds; 0.00000000 minutes; total time:0.00000000 minutes)
+rule.ngram: abcd
+rule.gradient: -0.44241941
+exponent of epsilon: 0.00000000
+epsilon: 0.00100000
+n: 0
+n: 1
+n: 2
+n: 3
+n: 4
+n: 5
+n: 6
+n: 7
+n: 8
+n: 9
+Finished doubling epsilon! The monotonicity loss_n+1 < loss_n is broken!
+current range size: 0.89463772
+current interpolation iteration: 0
+current interpolation iteration: 1
+current interpolation iteration: 2
+current interpolation iteration: 3
+current interpolation iteration: 4
+current interpolation iteration: 5
+current interpolation iteration: 6
+current interpolation iteration: 7
+current interpolation iteration: 8
+loss: 2.34958983
+penalty_term: 0.22779205
+6 7 2/2/12 0.11635631 abcd
+loss + penalty term: 2.57738188
+current ngram rule: a
+location size: 3
+
+gradient (before regularizer): -0.40603724
+upos (before regularizer): -0.85833444
+uneg (before regularizer): 0.45229721
+tau: 0.00000000
+gradient after regularizer: -0.12848724
+existing feature starting with current ngram rule prefix: a, 0.09693750,  sign: 1
+current_upos: -0.58078444
+current_uneg: 0.72984721
+tau: 0.00000000
+
+current best ngram rule: a
+gradient: -0.12848724
+
+ !next.empty()
+current ngram rule: ab
+location size: 3
+
+gradient (before regularizer): -0.40603724
+upos (before regularizer): -0.85833444
+uneg (before regularizer): 0.45229721
+tau: 0.12848724
+gradient after regularizer: -0.10491344
+existing feature starting with current ngram rule prefix: ab, 0.12640475,  sign: 1
+current_upos: -0.55721065
+current_uneg: 0.75342100
+tau: 0.12848724
+ !next.empty()
+current ngram rule: abc
+location size: 1
+
+gradient (before regularizer): -0.41393906
+upos (before regularizer): -0.41393906
+uneg (before regularizer): 0.00000000
+tau: 0.12848724
+gradient after regularizer: -0.09543463
+existing feature starting with current ngram rule prefix: abc, 0.14813054,  sign: 1
+current_upos: -0.09543463
+current_uneg: 0.31850443
+tau: 0.12848724
+ !next.empty()
+current ngram rule: abcd
+location size: 1
+
+gradient (before regularizer): -0.41393906
+upos (before regularizer): -0.41393906
+uneg (before regularizer): 0.00000000
+tau: 0.12848724
+gradient after regularizer: -0.12085401
+existing feature starting with current ngram rule prefix: abcd, 0.11635631,  sign: 1
+current_upos: -0.12085401
+current_uneg: 0.29308504
+tau: 0.12848724
+current ngram rule: abd
+location size: 1
+
+gradient (before regularizer): 0.45229721
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.45229721
+tau: 0.12848724
+gradient after regularizer: 0.14193255
+existing feature starting with current ngram rule prefix: abd, -0.13795582,  sign: -1
+current_upos: -0.31036466
+current_uneg: 0.14193255
+tau: 0.12848724
+
+current best ngram rule: abd
+gradient: 0.14193255
+
+current ngram rule: b
+location size: 4
+
+gradient (before regularizer): 0.05898895
+upos (before regularizer): -0.85833444
+uneg (before regularizer): 0.91732339
+tau: 0.14193255
+gradient after regularizer: 0.05898895
+existing feature starting with current ngram rule prefix: bd, -0.13665564,  sign: -1
+current_upos: -1.16765896
+current_uneg: 0.60799888
+tau: 0.14193255
+ !next.empty()
+current ngram rule: bc
+location size: 2
+
+gradient (before regularizer): 0.05108713
+upos (before regularizer): -0.41393906
+uneg (before regularizer): 0.46502619
+tau: 0.14193255
+ !next.empty()
+current ngram rule: bcd
+location size: 2
+
+gradient (before regularizer): 0.05108713
+upos (before regularizer): -0.41393906
+uneg (before regularizer): 0.46502619
+tau: 0.14193255
+current ngram rule: bd
+location size: 1
+
+gradient (before regularizer): 0.45229721
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.45229721
+tau: 0.14193255
+gradient after regularizer: 0.14297270
+existing feature starting with current ngram rule prefix: bd, -0.13665564,  sign: -1
+current_upos: -0.30932451
+current_uneg: 0.14297270
+tau: 0.14193255
+
+current best ngram rule: bd
+gradient: 0.14297270
+
+current ngram rule: c
+location size: 2
+
+gradient (before regularizer): 0.05108713
+upos (before regularizer): -0.41393906
+uneg (before regularizer): 0.46502619
+tau: 0.14297270
+ !next.empty()
+current ngram rule: cd
+location size: 2
+
+gradient (before regularizer): 0.05108713
+upos (before regularizer): -0.41393906
+uneg (before regularizer): 0.46502619
+tau: 0.14297270
+current ngram rule: d
+location size: 3
+
+gradient (before regularizer): 0.50338434
+upos (before regularizer): -0.41393906
+uneg (before regularizer): 0.91732339
+tau: 0.14297270
+gradient after regularizer: 0.19128507
+existing feature starting with current ngram rule prefix: d, -0.14012408,  sign: -1
+current_upos: -0.72603832
+current_uneg: 0.60522413
+tau: 0.14297270
+
+current best ngram rule: d
+gradient: 0.19128507
+
+found best ngram! 
+rule.gradient: 0.19128507 (per iter: 0 seconds; 0.00000000 minutes; total time:0.00000000 minutes)
+rule.ngram: d
+rule.gradient: 0.19128507
+exponent of epsilon: 0.00000000
+epsilon: 0.00100000
+n: 0
+n: 1
+n: 2
+n: 3
+n: 4
+n: 5
+n: 6
+n: 7
+n: 8
+n: 9
+Finished doubling epsilon! The monotonicity loss_n+1 < loss_n is broken!
+current range size: 0.66406306
+current interpolation iteration: 0
+current interpolation iteration: 1
+current interpolation iteration: 2
+current interpolation iteration: 3
+current interpolation iteration: 4
+current interpolation iteration: 5
+current interpolation iteration: 6
+current interpolation iteration: 7
+current interpolation iteration: 8
+current interpolation iteration: 9
+loss: 2.31972365
+penalty_term: 0.24874046
+7 7 4/0/12 -0.06216765 d
+loss + penalty term: 2.56846411
+current ngram rule: a
+location size: 3
+
+gradient (before regularizer): -0.43654490
+upos (before regularizer): -0.87349213
+uneg (before regularizer): 0.43694723
+tau: 0.00000000
+gradient after regularizer: -0.15899490
+existing feature starting with current ngram rule prefix: a, 0.09693750,  sign: 1
+current_upos: -0.59594213
+current_uneg: 0.71449723
+tau: 0.00000000
+
+current best ngram rule: a
+gradient: -0.15899490
+
+ !next.empty()
+current ngram rule: ab
+location size: 3
+
+gradient (before regularizer): -0.43654490
+upos (before regularizer): -0.87349213
+uneg (before regularizer): 0.43694723
+tau: 0.15899490
+gradient after regularizer: -0.13542110
+existing feature starting with current ngram rule prefix: ab, 0.12640475,  sign: 1
+current_upos: -0.57236833
+current_uneg: 0.73807102
+tau: 0.15899490
+ !next.empty()
+current ngram rule: abc
+location size: 1
+
+gradient (before regularizer): -0.42909674
+upos (before regularizer): -0.42909674
+uneg (before regularizer): 0.00000000
+tau: 0.15899490
+gradient after regularizer: -0.11059231
+existing feature starting with current ngram rule prefix: abc, 0.14813054,  sign: 1
+current_upos: -0.11059231
+current_uneg: 0.31850443
+tau: 0.15899490
+ !next.empty()
+current ngram rule: abcd
+location size: 1
+
+gradient (before regularizer): -0.42909674
+upos (before regularizer): -0.42909674
+uneg (before regularizer): 0.00000000
+tau: 0.15899490
+gradient after regularizer: -0.13601170
+existing feature starting with current ngram rule prefix: abcd, 0.11635631,  sign: 1
+current_upos: -0.13601170
+current_uneg: 0.29308504
+tau: 0.15899490
+current ngram rule: abd
+location size: 1
+
+gradient (before regularizer): 0.43694723
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.43694723
+tau: 0.15899490
+gradient after regularizer: 0.12658257
+existing feature starting with current ngram rule prefix: abd, -0.13795582,  sign: -1
+current_upos: -0.31036466
+current_uneg: 0.12658257
+tau: 0.15899490
+current ngram rule: b
+location size: 4
+
+gradient (before regularizer): 0.01305393
+upos (before regularizer): -0.87349213
+uneg (before regularizer): 0.88654605
+tau: 0.15899490
+gradient after regularizer: 0.01305393
+existing feature starting with current ngram rule prefix: bd, -0.13665564,  sign: -1
+current_upos: -1.18281664
+current_uneg: 0.57722154
+tau: 0.15899490
+ !next.empty()
+current ngram rule: bc
+location size: 2
+
+gradient (before regularizer): 0.02050208
+upos (before regularizer): -0.42909674
+uneg (before regularizer): 0.44959883
+tau: 0.15899490
+ !next.empty()
+current ngram rule: bcd
+location size: 2
+
+gradient (before regularizer): 0.02050208
+upos (before regularizer): -0.42909674
+uneg (before regularizer): 0.44959883
+tau: 0.15899490
+current ngram rule: bd
+location size: 1
+
+gradient (before regularizer): 0.43694723
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.43694723
+tau: 0.15899490
+gradient after regularizer: 0.12762271
+existing feature starting with current ngram rule prefix: bd, -0.13665564,  sign: -1
+current_upos: -0.30932451
+current_uneg: 0.12762271
+tau: 0.15899490
+current ngram rule: c
+location size: 2
+
+gradient (before regularizer): 0.02050208
+upos (before regularizer): -0.42909674
+uneg (before regularizer): 0.44959883
+tau: 0.15899490
+ !next.empty()
+current ngram rule: cd
+location size: 2
+
+gradient (before regularizer): 0.02050208
+upos (before regularizer): -0.42909674
+uneg (before regularizer): 0.44959883
+tau: 0.15899490
+current ngram rule: d
+location size: 3
+
+gradient (before regularizer): 0.45744931
+upos (before regularizer): -0.42909674
+uneg (before regularizer): 0.88654605
+tau: 0.15899490
+gradient after regularizer: 0.09561593
+existing feature starting with current ngram rule prefix: d, -0.20229173,  sign: -1
+current_upos: -0.79093012
+current_uneg: 0.52471267
+tau: 0.15899490
+found best ngram! 
+rule.gradient: -0.15899490 (per iter: 0 seconds; 0.00000000 minutes; total time:0.00000000 minutes)
+rule.ngram: a
+rule.gradient: -0.15899490
+exponent of epsilon: 0.00000000
+epsilon: 0.00100000
+n: 0
+n: 1
+n: 2
+n: 3
+n: 4
+n: 5
+n: 6
+n: 7
+n: 8
+n: 9
+Finished doubling epsilon! The monotonicity loss_n+1 < loss_n is broken!
+current range size: 0.56861598
+current interpolation iteration: 0
+current interpolation iteration: 1
+current interpolation iteration: 2
+current interpolation iteration: 3
+current interpolation iteration: 4
+current interpolation iteration: 5
+current interpolation iteration: 6
+current interpolation iteration: 7
+current interpolation iteration: 8
+loss: 2.29811857
+penalty_term: 0.26417580
+8 7 1/0/12 0.05175284 a
+loss + penalty term: 2.56229437
+current ngram rule: a
+location size: 3
+
+gradient (before regularizer): -0.39840605
+upos (before regularizer): -0.84812456
+uneg (before regularizer): 0.44971851
+tau: 0.00000000
+gradient after regularizer: -0.07945378
+existing feature starting with current ngram rule prefix: a, 0.14869034,  sign: 1
+current_upos: -0.52917228
+current_uneg: 0.76867078
+tau: 0.00000000
+
+current best ngram rule: a
+gradient: -0.07945378
+
+ !next.empty()
+current ngram rule: ab
+location size: 3
+
+gradient (before regularizer): -0.39840605
+upos (before regularizer): -0.84812456
+uneg (before regularizer): 0.44971851
+tau: 0.07945378
+gradient after regularizer: -0.09728225
+existing feature starting with current ngram rule prefix: ab, 0.12640475,  sign: 1
+current_upos: -0.54700076
+current_uneg: 0.75084231
+tau: 0.07945378
+
+current best ngram rule: ab
+gradient: -0.09728225
+
+ !next.empty()
+current ngram rule: abc
+location size: 1
+
+gradient (before regularizer): -0.41646787
+upos (before regularizer): -0.41646787
+uneg (before regularizer): 0.00000000
+tau: 0.09728225
+gradient after regularizer: -0.09796344
+existing feature starting with current ngram rule prefix: abc, 0.14813054,  sign: 1
+current_upos: -0.09796344
+current_uneg: 0.31850443
+tau: 0.09728225
+
+current best ngram rule: abc
+gradient: -0.09796344
+
+ !next.empty()
+current ngram rule: abcd
+location size: 1
+
+gradient (before regularizer): -0.41646787
+upos (before regularizer): -0.41646787
+uneg (before regularizer): 0.00000000
+tau: 0.09796344
+gradient after regularizer: -0.12338282
+existing feature starting with current ngram rule prefix: abcd, 0.11635631,  sign: 1
+current_upos: -0.12338282
+current_uneg: 0.29308504
+tau: 0.09796344
+
+current best ngram rule: abcd
+gradient: -0.12338282
+
+current ngram rule: abd
+location size: 1
+
+gradient (before regularizer): 0.44971851
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.44971851
+tau: 0.12338282
+gradient after regularizer: 0.13935385
+existing feature starting with current ngram rule prefix: abd, -0.13795582,  sign: -1
+current_upos: -0.31036466
+current_uneg: 0.13935385
+tau: 0.12338282
+
+current best ngram rule: abd
+gradient: 0.13935385
+
+current ngram rule: b
+location size: 4
+
+gradient (before regularizer): 0.05119278
+upos (before regularizer): -0.84812456
+uneg (before regularizer): 0.89931734
+tau: 0.13935385
+gradient after regularizer: 0.05119278
+existing feature starting with current ngram rule prefix: bd, -0.13665564,  sign: -1
+current_upos: -1.15744907
+current_uneg: 0.58999282
+tau: 0.13935385
+ !next.empty()
+current ngram rule: bc
+location size: 2
+
+gradient (before regularizer): 0.03313096
+upos (before regularizer): -0.41646787
+uneg (before regularizer): 0.44959883
+tau: 0.13935385
+ !next.empty()
+current ngram rule: bcd
+location size: 2
+
+gradient (before regularizer): 0.03313096
+upos (before regularizer): -0.41646787
+uneg (before regularizer): 0.44959883
+tau: 0.13935385
+current ngram rule: bd
+location size: 1
+
+gradient (before regularizer): 0.44971851
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.44971851
+tau: 0.13935385
+gradient after regularizer: 0.14039400
+existing feature starting with current ngram rule prefix: bd, -0.13665564,  sign: -1
+current_upos: -0.30932451
+current_uneg: 0.14039400
+tau: 0.13935385
+
+current best ngram rule: bd
+gradient: 0.14039400
+
+current ngram rule: c
+location size: 2
+
+gradient (before regularizer): 0.03313096
+upos (before regularizer): -0.41646787
+uneg (before regularizer): 0.44959883
+tau: 0.14039400
+ !next.empty()
+current ngram rule: cd
+location size: 2
+
+gradient (before regularizer): 0.03313096
+upos (before regularizer): -0.41646787
+uneg (before regularizer): 0.44959883
+tau: 0.14039400
+current ngram rule: d
+location size: 3
+
+gradient (before regularizer): 0.48284947
+upos (before regularizer): -0.41646787
+uneg (before regularizer): 0.89931734
+tau: 0.14039400
+gradient after regularizer: 0.12101609
+existing feature starting with current ngram rule prefix: d, -0.20229173,  sign: -1
+current_upos: -0.77830125
+current_uneg: 0.53748396
+tau: 0.14039400
+found best ngram! 
+rule.gradient: 0.14039400 (per iter: 0 seconds; 0.00000000 minutes; total time:0.00000000 minutes)
+rule.ngram: bd
+rule.gradient: 0.14039400
+exponent of epsilon: 0.00000000
+epsilon: 0.00100000
+n: 0
+n: 1
+n: 2
+n: 3
+n: 4
+n: 5
+n: 6
+n: 7
+n: 8
+n: 9
+n: 10
+Finished doubling epsilon! The monotonicity loss_n+1 < loss_n is broken!
+current range size: 1.03032220
+current interpolation iteration: 0
+current interpolation iteration: 1
+current interpolation iteration: 2
+current interpolation iteration: 3
+current interpolation iteration: 4
+current interpolation iteration: 5
+current interpolation iteration: 6
+current interpolation iteration: 7
+current interpolation iteration: 8
+current interpolation iteration: 9
+current interpolation iteration: 10
+loss: 2.26646003
+penalty_term: 0.28845162
+9 7 6/0/12 -0.07181153 bd
+loss + penalty term: 2.55491165
+current ngram rule: a
+location size: 3
+
+gradient (before regularizer): -0.41610586
+upos (before regularizer): -0.84812456
+uneg (before regularizer): 0.43201870
+tau: 0.00000000
+gradient after regularizer: -0.09715359
+existing feature starting with current ngram rule prefix: a, 0.14869034,  sign: 1
+current_upos: -0.52917228
+current_uneg: 0.75097097
+tau: 0.00000000
+
+current best ngram rule: a
+gradient: -0.09715359
+
+ !next.empty()
+current ngram rule: ab
+location size: 3
+
+gradient (before regularizer): -0.41610586
+upos (before regularizer): -0.84812456
+uneg (before regularizer): 0.43201870
+tau: 0.09715359
+gradient after regularizer: -0.11498206
+existing feature starting with current ngram rule prefix: ab, 0.12640475,  sign: 1
+current_upos: -0.54700076
+current_uneg: 0.73314250
+tau: 0.09715359
+
+current best ngram rule: ab
+gradient: -0.11498206
+
+ !next.empty()
+current ngram rule: abc
+location size: 1
+
+gradient (before regularizer): -0.41646787
+upos (before regularizer): -0.41646787
+uneg (before regularizer): 0.00000000
+tau: 0.11498206
+gradient after regularizer: -0.09796344
+existing feature starting with current ngram rule prefix: abc, 0.14813054,  sign: 1
+current_upos: -0.09796344
+current_uneg: 0.31850443
+tau: 0.11498206
+ !next.empty()
+current ngram rule: abcd
+location size: 1
+
+gradient (before regularizer): -0.41646787
+upos (before regularizer): -0.41646787
+uneg (before regularizer): 0.00000000
+tau: 0.11498206
+gradient after regularizer: -0.12338282
+existing feature starting with current ngram rule prefix: abcd, 0.11635631,  sign: 1
+current_upos: -0.12338282
+current_uneg: 0.29308504
+tau: 0.11498206
+
+current best ngram rule: abcd
+gradient: -0.12338282
+
+current ngram rule: abd
+location size: 1
+
+gradient (before regularizer): 0.43201870
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.43201870
+tau: 0.12338282
+gradient after regularizer: 0.12165404
+existing feature starting with current ngram rule prefix: abd, -0.13795582,  sign: -1
+current_upos: -0.31036466
+current_uneg: 0.12165404
+tau: 0.12338282
+current ngram rule: b
+location size: 4
+
+gradient (before regularizer): 0.03349297
+upos (before regularizer): -0.84812456
+uneg (before regularizer): 0.88161753
+tau: 0.12338282
+gradient after regularizer: 0.03349297
+existing feature starting with current ngram rule prefix: bd, -0.20846717,  sign: -1
+current_upos: -1.21489829
+current_uneg: 0.51484379
+tau: 0.12338282
+ !next.empty()
+current ngram rule: bc
+location size: 2
+
+gradient (before regularizer): 0.03313096
+upos (before regularizer): -0.41646787
+uneg (before regularizer): 0.44959883
+tau: 0.12338282
+ !next.empty()
+current ngram rule: bcd
+location size: 2
+
+gradient (before regularizer): 0.03313096
+upos (before regularizer): -0.41646787
+uneg (before regularizer): 0.44959883
+tau: 0.12338282
+current ngram rule: bd
+location size: 1
+
+gradient (before regularizer): 0.43201870
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.43201870
+tau: 0.12338282
+gradient after regularizer: 0.06524496
+existing feature starting with current ngram rule prefix: bd, -0.20846717,  sign: -1
+current_upos: -0.36677374
+current_uneg: 0.06524496
+tau: 0.12338282
+current ngram rule: c
+location size: 2
+
+gradient (before regularizer): 0.03313096
+upos (before regularizer): -0.41646787
+uneg (before regularizer): 0.44959883
+tau: 0.12338282
+ !next.empty()
+current ngram rule: cd
+location size: 2
+
+gradient (before regularizer): 0.03313096
+upos (before regularizer): -0.41646787
+uneg (before regularizer): 0.44959883
+tau: 0.12338282
+current ngram rule: d
+location size: 3
+
+gradient (before regularizer): 0.46514966
+upos (before regularizer): -0.41646787
+uneg (before regularizer): 0.88161753
+tau: 0.12338282
+gradient after regularizer: 0.10331628
+existing feature starting with current ngram rule prefix: d, -0.20229173,  sign: -1
+current_upos: -0.77830125
+current_uneg: 0.51978415
+tau: 0.12338282
+found best ngram! 
+rule.gradient: -0.12338282 (per iter: 0 seconds; 0.00000000 minutes; total time:0.00000000 minutes)
+rule.ngram: abcd
+rule.gradient: -0.12338282
+exponent of epsilon: 0.00000000
+epsilon: 0.00100000
+n: 0
+n: 1
+n: 2
+n: 3
+n: 4
+n: 5
+n: 6
+n: 7
+n: 8
+n: 9
+n: 10
+Finished doubling epsilon! The monotonicity loss_n+1 < loss_n is broken!
+current range size: 0.94052246
+current interpolation iteration: 0
+current interpolation iteration: 1
+current interpolation iteration: 2
+current interpolation iteration: 3
+current interpolation iteration: 4
+current interpolation iteration: 5
+current interpolation iteration: 6
+current interpolation iteration: 7
+current interpolation iteration: 8
+current interpolation iteration: 9
+loss: 2.24065880
+penalty_term: 0.30854148
+10 7 3/0/12 0.06311031 abcd
+loss + penalty term: 2.54920028
+current ngram rule: a
+location size: 3
+
+gradient (before regularizer): -0.40085410
+upos (before regularizer): -0.83287280
+uneg (before regularizer): 0.43201870
+tau: 0.00000000
+gradient after regularizer: -0.08190183
+existing feature starting with current ngram rule prefix: a, 0.14869034,  sign: 1
+current_upos: -0.51392053
+current_uneg: 0.75097097
+tau: 0.00000000
+
+current best ngram rule: a
+gradient: -0.08190183
+
+ !next.empty()
+current ngram rule: ab
+location size: 3
+
+gradient (before regularizer): -0.40085410
+upos (before regularizer): -0.83287280
+uneg (before regularizer): 0.43201870
+tau: 0.08190183
+gradient after regularizer: -0.09973031
+existing feature starting with current ngram rule prefix: ab, 0.12640475,  sign: 1
+current_upos: -0.53174901
+current_uneg: 0.73314250
+tau: 0.08190183
+
+current best ngram rule: ab
+gradient: -0.09973031
+
+ !next.empty()
+current ngram rule: abc
+location size: 1
+
+gradient (before regularizer): -0.40121611
+upos (before regularizer): -0.40121611
+uneg (before regularizer): 0.00000000
+tau: 0.09973031
+gradient after regularizer: -0.08271168
+existing feature starting with current ngram rule prefix: abc, 0.14813054,  sign: 1
+current_upos: -0.08271168
+current_uneg: 0.31850443
+tau: 0.09973031
+ !next.empty()
+current ngram rule: abcd
+location size: 1
+
+gradient (before regularizer): -0.40121611
+upos (before regularizer): -0.40121611
+uneg (before regularizer): 0.00000000
+tau: 0.09973031
+gradient after regularizer: -0.05764282
+existing feature starting with current ngram rule prefix: abcd, 0.17946662,  sign: 1
+current_upos: -0.05764282
+current_uneg: 0.34357330
+tau: 0.09973031
+current ngram rule: abd
+location size: 1
+
+gradient (before regularizer): 0.43201870
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.43201870
+tau: 0.09973031
+gradient after regularizer: 0.12165404
+existing feature starting with current ngram rule prefix: abd, -0.13795582,  sign: -1
+current_upos: -0.31036466
+current_uneg: 0.12165404
+tau: 0.09973031
+
+current best ngram rule: abd
+gradient: 0.12165404
+
+current ngram rule: b
+location size: 4
+
+gradient (before regularizer): 0.04874472
+upos (before regularizer): -0.83287280
+uneg (before regularizer): 0.88161753
+tau: 0.12165404
+gradient after regularizer: 0.04874472
+existing feature starting with current ngram rule prefix: bd, -0.20846717,  sign: -1
+current_upos: -1.19964654
+current_uneg: 0.51484379
+tau: 0.12165404
+ !next.empty()
+current ngram rule: bc
+location size: 2
+
+gradient (before regularizer): 0.04838271
+upos (before regularizer): -0.40121611
+uneg (before regularizer): 0.44959883
+tau: 0.12165404
+ !next.empty()
+current ngram rule: bcd
+location size: 2
+
+gradient (before regularizer): 0.04838271
+upos (before regularizer): -0.40121611
+uneg (before regularizer): 0.44959883
+tau: 0.12165404
+current ngram rule: bd
+location size: 1
+
+gradient (before regularizer): 0.43201870
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.43201870
+tau: 0.12165404
+gradient after regularizer: 0.06524496
+existing feature starting with current ngram rule prefix: bd, -0.20846717,  sign: -1
+current_upos: -0.36677374
+current_uneg: 0.06524496
+tau: 0.12165404
+current ngram rule: c
+location size: 2
+
+gradient (before regularizer): 0.04838271
+upos (before regularizer): -0.40121611
+uneg (before regularizer): 0.44959883
+tau: 0.12165404
+ !next.empty()
+current ngram rule: cd
+location size: 2
+
+gradient (before regularizer): 0.04838271
+upos (before regularizer): -0.40121611
+uneg (before regularizer): 0.44959883
+tau: 0.12165404
+current ngram rule: d
+location size: 3
+
+gradient (before regularizer): 0.48040141
+upos (before regularizer): -0.40121611
+uneg (before regularizer): 0.88161753
+tau: 0.12165404
+gradient after regularizer: 0.11856803
+existing feature starting with current ngram rule prefix: d, -0.20229173,  sign: -1
+current_upos: -0.76304949
+current_uneg: 0.51978415
+tau: 0.12165404
+found best ngram! 
+rule.gradient: 0.12165404 (per iter: 0 seconds; 0.00000000 minutes; total time:0.00000000 minutes)
+rule.ngram: abd
+rule.gradient: 0.12165404
+exponent of epsilon: 0.00000000
+epsilon: 0.00100000
+n: 0
+n: 1
+n: 2
+n: 3
+n: 4
+n: 5
+n: 6
+n: 7
+n: 8
+n: 9
+n: 10
+Finished doubling epsilon! The monotonicity loss_n+1 < loss_n is broken!
+current range size: 1.06464795
+current interpolation iteration: 0
+current interpolation iteration: 1
+current interpolation iteration: 2
+current interpolation iteration: 3
+current interpolation iteration: 4
+current interpolation iteration: 5
+current interpolation iteration: 6
+current interpolation iteration: 7
+current interpolation iteration: 8
+current interpolation iteration: 9
+current interpolation iteration: 10
+loss: 2.21424964
+penalty_term: 0.32940307
+11 7 3/0/12 -0.06222604 abd
+loss + penalty term: 2.54365271
+current ngram rule: a
+location size: 3
+
+gradient (before regularizer): -0.41605384
+upos (before regularizer): -0.83287280
+uneg (before regularizer): 0.41681897
+tau: 0.00000000
+gradient after regularizer: -0.09710157
+existing feature starting with current ngram rule prefix: a, 0.14869034,  sign: 1
+current_upos: -0.51392053
+current_uneg: 0.73577124
+tau: 0.00000000
+
+current best ngram rule: a
+gradient: -0.09710157
+
+ !next.empty()
+current ngram rule: ab
+location size: 3
+
+gradient (before regularizer): -0.41605384
+upos (before regularizer): -0.83287280
+uneg (before regularizer): 0.41681897
+tau: 0.09710157
+gradient after regularizer: -0.11493004
+existing feature starting with current ngram rule prefix: ab, 0.12640475,  sign: 1
+current_upos: -0.53174901
+current_uneg: 0.71794276
+tau: 0.09710157
+
+current best ngram rule: ab
+gradient: -0.11493004
+
+ !next.empty()
+current ngram rule: abc
+location size: 1
+
+gradient (before regularizer): -0.40121611
+upos (before regularizer): -0.40121611
+uneg (before regularizer): 0.00000000
+tau: 0.11493004
+gradient after regularizer: -0.08271168
+existing feature starting with current ngram rule prefix: abc, 0.14813054,  sign: 1
+current_upos: -0.08271168
+current_uneg: 0.31850443
+tau: 0.11493004
+ !next.empty()
+current ngram rule: abcd
+location size: 1
+
+gradient (before regularizer): -0.40121611
+upos (before regularizer): -0.40121611
+uneg (before regularizer): 0.00000000
+tau: 0.11493004
+gradient after regularizer: -0.05764282
+existing feature starting with current ngram rule prefix: abcd, 0.17946662,  sign: 1
+current_upos: -0.05764282
+current_uneg: 0.34357330
+tau: 0.11493004
+current ngram rule: abd
+location size: 1
+
+gradient (before regularizer): 0.41681897
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.41681897
+tau: 0.11493004
+gradient after regularizer: 0.05667348
+existing feature starting with current ngram rule prefix: abd, -0.20018186,  sign: -1
+current_upos: -0.36014549
+current_uneg: 0.05667348
+tau: 0.11493004
+current ngram rule: b
+location size: 4
+
+gradient (before regularizer): 0.03354499
+upos (before regularizer): -0.83287280
+uneg (before regularizer): 0.86641779
+tau: 0.11493004
+gradient after regularizer: 0.03354499
+existing feature starting with current ngram rule prefix: bd, -0.20846717,  sign: -1
+current_upos: -1.19964654
+current_uneg: 0.49964406
+tau: 0.11493004
+ !next.empty()
+current ngram rule: bc
+location size: 2
+
+gradient (before regularizer): 0.04838271
+upos (before regularizer): -0.40121611
+uneg (before regularizer): 0.44959883
+tau: 0.11493004
+ !next.empty()
+current ngram rule: bcd
+location size: 2
+
+gradient (before regularizer): 0.04838271
+upos (before regularizer): -0.40121611
+uneg (before regularizer): 0.44959883
+tau: 0.11493004
+current ngram rule: bd
+location size: 1
+
+gradient (before regularizer): 0.41681897
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.41681897
+tau: 0.11493004
+gradient after regularizer: 0.05004523
+existing feature starting with current ngram rule prefix: bd, -0.20846717,  sign: -1
+current_upos: -0.36677374
+current_uneg: 0.05004523
+tau: 0.11493004
+current ngram rule: c
+location size: 2
+
+gradient (before regularizer): 0.04838271
+upos (before regularizer): -0.40121611
+uneg (before regularizer): 0.44959883
+tau: 0.11493004
+ !next.empty()
+current ngram rule: cd
+location size: 2
+
+gradient (before regularizer): 0.04838271
+upos (before regularizer): -0.40121611
+uneg (before regularizer): 0.44959883
+tau: 0.11493004
+current ngram rule: d
+location size: 3
+
+gradient (before regularizer): 0.46520168
+upos (before regularizer): -0.40121611
+uneg (before regularizer): 0.86641779
+tau: 0.11493004
+gradient after regularizer: 0.10336830
+existing feature starting with current ngram rule prefix: d, -0.20229173,  sign: -1
+current_upos: -0.76304949
+current_uneg: 0.50458441
+tau: 0.11493004
+found best ngram! 
+rule.gradient: -0.11493004 (per iter: 0 seconds; 0.00000000 minutes; total time:0.00000000 minutes)
+rule.ngram: ab
+rule.gradient: -0.11493004
+exponent of epsilon: 0.00000000
+epsilon: 0.00100000
+n: 0
+n: 1
+n: 2
+n: 3
+n: 4
+n: 5
+n: 6
+n: 7
+n: 8
+n: 9
+Finished doubling epsilon! The monotonicity loss_n+1 < loss_n is broken!
+current range size: 0.46709054
+current interpolation iteration: 0
+current interpolation iteration: 1
+current interpolation iteration: 2
+current interpolation iteration: 3
+current interpolation iteration: 4
+current interpolation iteration: 5
+current interpolation iteration: 6
+current interpolation iteration: 7
+current interpolation iteration: 8
+loss: 2.19910531
+penalty_term: 0.34130395
+12 7 2/0/12 0.03763959 ab
+loss + penalty term: 2.54040926
+current ngram rule: a
+location size: 3
+
+gradient (before regularizer): -0.38865937
+upos (before regularizer): -0.81465545
+uneg (before regularizer): 0.42599608
+tau: 0.00000000
+gradient after regularizer: -0.06970710
+existing feature starting with current ngram rule prefix: a, 0.14869034,  sign: 1
+current_upos: -0.49570317
+current_uneg: 0.74494835
+tau: 0.00000000
+
+current best ngram rule: a
+gradient: -0.06970710
+
+ !next.empty()
+current ngram rule: ab
+location size: 3
+
+gradient (before regularizer): -0.38865937
+upos (before regularizer): -0.81465545
+uneg (before regularizer): 0.42599608
+tau: 0.06970710
+gradient after regularizer: -0.05742390
+existing feature starting with current ngram rule prefix: ab, 0.16404434,  sign: 1
+current_upos: -0.48341998
+current_uneg: 0.75723155
+tau: 0.06970710
+ !next.empty()
+current ngram rule: abc
+location size: 1
+
+gradient (before regularizer): -0.39220807
+upos (before regularizer): -0.39220807
+uneg (before regularizer): 0.00000000
+tau: 0.06970710
+gradient after regularizer: -0.07370364
+existing feature starting with current ngram rule prefix: abc, 0.14813054,  sign: 1
+current_upos: -0.07370364
+current_uneg: 0.31850443
+tau: 0.06970710
+
+current best ngram rule: abc
+gradient: -0.07370364
+
+ !next.empty()
+current ngram rule: abcd
+location size: 1
+
+gradient (before regularizer): -0.39220807
+upos (before regularizer): -0.39220807
+uneg (before regularizer): 0.00000000
+tau: 0.07370364
+gradient after regularizer: -0.04863477
+existing feature starting with current ngram rule prefix: abcd, 0.17946662,  sign: 1
+current_upos: -0.04863477
+current_uneg: 0.34357330
+tau: 0.07370364
+current ngram rule: abd
+location size: 1
+
+gradient (before regularizer): 0.42599608
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.42599608
+tau: 0.07370364
+gradient after regularizer: 0.06585059
+existing feature starting with current ngram rule prefix: abd, -0.20018186,  sign: -1
+current_upos: -0.36014549
+current_uneg: 0.06585059
+tau: 0.07370364
+current ngram rule: b
+location size: 4
+
+gradient (before regularizer): 0.06093946
+upos (before regularizer): -0.81465545
+uneg (before regularizer): 0.87559491
+tau: 0.07370364
+gradient after regularizer: 0.06093946
+existing feature starting with current ngram rule prefix: bd, -0.20846717,  sign: -1
+current_upos: -1.18142918
+current_uneg: 0.50882117
+tau: 0.07370364
+ !next.empty()
+current ngram rule: bc
+location size: 2
+
+gradient (before regularizer): 0.05739076
+upos (before regularizer): -0.39220807
+uneg (before regularizer): 0.44959883
+tau: 0.07370364
+ !next.empty()
+current ngram rule: bcd
+location size: 2
+
+gradient (before regularizer): 0.05739076
+upos (before regularizer): -0.39220807
+uneg (before regularizer): 0.44959883
+tau: 0.07370364
+current ngram rule: bd
+location size: 1
+
+gradient (before regularizer): 0.42599608
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.42599608
+tau: 0.07370364
+gradient after regularizer: 0.05922234
+existing feature starting with current ngram rule prefix: bd, -0.20846717,  sign: -1
+current_upos: -0.36677374
+current_uneg: 0.05922234
+tau: 0.07370364
+current ngram rule: c
+location size: 2
+
+gradient (before regularizer): 0.05739076
+upos (before regularizer): -0.39220807
+uneg (before regularizer): 0.44959883
+tau: 0.07370364
+ !next.empty()
+current ngram rule: cd
+location size: 2
+
+gradient (before regularizer): 0.05739076
+upos (before regularizer): -0.39220807
+uneg (before regularizer): 0.44959883
+tau: 0.07370364
+current ngram rule: d
+location size: 3
+
+gradient (before regularizer): 0.48338684
+upos (before regularizer): -0.39220807
+uneg (before regularizer): 0.87559491
+tau: 0.07370364
+gradient after regularizer: 0.12155346
+existing feature starting with current ngram rule prefix: d, -0.20229173,  sign: -1
+current_upos: -0.75404145
+current_uneg: 0.51376153
+tau: 0.07370364
+
+current best ngram rule: d
+gradient: 0.12155346
+
+found best ngram! 
+rule.gradient: 0.12155346 (per iter: 0 seconds; 0.00000000 minutes; total time:0.00000000 minutes)
+rule.ngram: d
+rule.gradient: 0.12155346
+exponent of epsilon: 0.00000000
+epsilon: 0.00100000
+n: 0
+n: 1
+n: 2
+n: 3
+n: 4
+n: 5
+n: 6
+n: 7
+n: 8
+n: 9
+Finished doubling epsilon! The monotonicity loss_n+1 < loss_n is broken!
+current range size: 0.59279384
+current interpolation iteration: 0
+current interpolation iteration: 1
+current interpolation iteration: 2
+current interpolation iteration: 3
+current interpolation iteration: 4
+current interpolation iteration: 5
+current interpolation iteration: 6
+current interpolation iteration: 7
+current interpolation iteration: 8
+loss: 2.18046847
+penalty_term: 0.35631805
+13 7 3/0/12 -0.03974798 d
+loss + penalty term: 2.53678653
+current ngram rule: a
+location size: 3
+
+gradient (before regularizer): -0.40786357
+upos (before regularizer): -0.82417012
+uneg (before regularizer): 0.41630655
+tau: 0.00000000
+gradient after regularizer: -0.08891130
+existing feature starting with current ngram rule prefix: a, 0.14869034,  sign: 1
+current_upos: -0.50521785
+current_uneg: 0.73525882
+tau: 0.00000000
+
+current best ngram rule: a
+gradient: -0.08891130
+
+ !next.empty()
+current ngram rule: ab
+location size: 3
+
+gradient (before regularizer): -0.40786357
+upos (before regularizer): -0.82417012
+uneg (before regularizer): 0.41630655
+tau: 0.08891130
+gradient after regularizer: -0.07662811
+existing feature starting with current ngram rule prefix: ab, 0.16404434,  sign: 1
+current_upos: -0.49293465
+current_uneg: 0.74754201
+tau: 0.08891130
+ !next.empty()
+current ngram rule: abc
+location size: 1
+
+gradient (before regularizer): -0.40172274
+upos (before regularizer): -0.40172274
+uneg (before regularizer): 0.00000000
+tau: 0.08891130
+gradient after regularizer: -0.08321831
+existing feature starting with current ngram rule prefix: abc, 0.14813054,  sign: 1
+current_upos: -0.08321831
+current_uneg: 0.31850443
+tau: 0.08891130
+ !next.empty()
+current ngram rule: abcd
+location size: 1
+
+gradient (before regularizer): -0.40172274
+upos (before regularizer): -0.40172274
+uneg (before regularizer): 0.00000000
+tau: 0.08891130
+gradient after regularizer: -0.05814945
+existing feature starting with current ngram rule prefix: abcd, 0.17946662,  sign: 1
+current_upos: -0.05814945
+current_uneg: 0.34357330
+tau: 0.08891130
+current ngram rule: abd
+location size: 1
+
+gradient (before regularizer): 0.41630655
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.41630655
+tau: 0.08891130
+gradient after regularizer: 0.05616106
+existing feature starting with current ngram rule prefix: abd, -0.20018186,  sign: -1
+current_upos: -0.36014549
+current_uneg: 0.05616106
+tau: 0.08891130
+current ngram rule: b
+location size: 4
+
+gradient (before regularizer): 0.03192018
+upos (before regularizer): -0.82417012
+uneg (before regularizer): 0.85609030
+tau: 0.08891130
+gradient after regularizer: 0.03192018
+existing feature starting with current ngram rule prefix: bd, -0.20846717,  sign: -1
+current_upos: -1.19094385
+current_uneg: 0.48931657
+tau: 0.08891130
+ !next.empty()
+current ngram rule: bc
+location size: 2
+
+gradient (before regularizer): 0.03806102
+upos (before regularizer): -0.40172274
+uneg (before regularizer): 0.43978376
+tau: 0.08891130
+ !next.empty()
+current ngram rule: bcd
+location size: 2
+
+gradient (before regularizer): 0.03806102
+upos (before regularizer): -0.40172274
+uneg (before regularizer): 0.43978376
+tau: 0.08891130
+current ngram rule: bd
+location size: 1
+
+gradient (before regularizer): 0.41630655
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.41630655
+tau: 0.08891130
+gradient after regularizer: 0.04953281
+existing feature starting with current ngram rule prefix: bd, -0.20846717,  sign: -1
+current_upos: -0.36677374
+current_uneg: 0.04953281
+tau: 0.08891130
+current ngram rule: c
+location size: 2
+
+gradient (before regularizer): 0.03806102
+upos (before regularizer): -0.40172274
+uneg (before regularizer): 0.43978376
+tau: 0.08891130
+ !next.empty()
+current ngram rule: cd
+location size: 2
+
+gradient (before regularizer): 0.03806102
+upos (before regularizer): -0.40172274
+uneg (before regularizer): 0.43978376
+tau: 0.08891130
+current ngram rule: d
+location size: 3
+
+gradient (before regularizer): 0.45436756
+upos (before regularizer): -0.40172274
+uneg (before regularizer): 0.85609030
+tau: 0.08891130
+gradient after regularizer: 0.06073580
+existing feature starting with current ngram rule prefix: d, -0.24203971,  sign: -1
+current_upos: -0.79535451
+current_uneg: 0.46245854
+tau: 0.08891130
+found best ngram! 
+rule.gradient: -0.08891130 (per iter: 0 seconds; 0.00000000 minutes; total time:0.00000000 minutes)
+rule.ngram: a
+rule.gradient: -0.08891130
+exponent of epsilon: 1.00000000
+epsilon: 0.00100000
+n: 0
+n: 1
+n: 2
+n: 3
+n: 4
+n: 5
+n: 6
+n: 7
+n: 8
+n: 9
+Finished doubling epsilon! The monotonicity loss_n+1 < loss_n is broken!
+current range size: 0.44689135
+current interpolation iteration: 0
+current interpolation iteration: 1
+current interpolation iteration: 2
+current interpolation iteration: 3
+current interpolation iteration: 4
+current interpolation iteration: 5
+current interpolation iteration: 6
+current interpolation iteration: 7
+current interpolation iteration: 8
+loss: 2.16890027
+penalty_term: 0.36594460
+14 7 1/0/12 0.02911845 a
+loss + penalty term: 2.53484487
+current ngram rule: a
+location size: 3
+
+gradient (before regularizer): -0.38670525
+upos (before regularizer): -0.81010423
+uneg (before regularizer): 0.42339898
+tau: 0.00000000
+gradient after regularizer: -0.04445822
+existing feature starting with current ngram rule prefix: a, 0.17780879,  sign: 1
+current_upos: -0.46785720
+current_uneg: 0.76564601
+tau: 0.00000000
+
+current best ngram rule: a
+gradient: -0.04445822
+
+ !next.empty()
+current ngram rule: ab
+location size: 3
+
+gradient (before regularizer): -0.38670525
+upos (before regularizer): -0.81010423
+uneg (before regularizer): 0.42339898
+tau: 0.04445822
+gradient after regularizer: -0.05546978
+existing feature starting with current ngram rule prefix: ab, 0.16404434,  sign: 1
+current_upos: -0.47886876
+current_uneg: 0.75463445
+tau: 0.04445822
+
+current best ngram rule: ab
+gradient: -0.05546978
+
+ !next.empty()
+current ngram rule: abc
+location size: 1
+
+gradient (before regularizer): -0.39474483
+upos (before regularizer): -0.39474483
+uneg (before regularizer): 0.00000000
+tau: 0.05546978
+gradient after regularizer: -0.07624040
+existing feature starting with current ngram rule prefix: abc, 0.14813054,  sign: 1
+current_upos: -0.07624040
+current_uneg: 0.31850443
+tau: 0.05546978
+
+current best ngram rule: abc
+gradient: -0.07624040
+
+ !next.empty()
+current ngram rule: abcd
+location size: 1
+
+gradient (before regularizer): -0.39474483
+upos (before regularizer): -0.39474483
+uneg (before regularizer): 0.00000000
+tau: 0.07624040
+gradient after regularizer: -0.05117153
+existing feature starting with current ngram rule prefix: abcd, 0.17946662,  sign: 1
+current_upos: -0.05117153
+current_uneg: 0.34357330
+tau: 0.07624040
+current ngram rule: abd
+location size: 1
+
+gradient (before regularizer): 0.42339898
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.42339898
+tau: 0.07624040
+gradient after regularizer: 0.06325349
+existing feature starting with current ngram rule prefix: abd, -0.20018186,  sign: -1
+current_upos: -0.36014549
+current_uneg: 0.06325349
+tau: 0.07624040
+current ngram rule: b
+location size: 4
+
+gradient (before regularizer): 0.05307851
+upos (before regularizer): -0.81010423
+uneg (before regularizer): 0.86318274
+tau: 0.07624040
+gradient after regularizer: 0.05307851
+existing feature starting with current ngram rule prefix: bd, -0.20846717,  sign: -1
+current_upos: -1.17687797
+current_uneg: 0.49640900
+tau: 0.07624040
+ !next.empty()
+current ngram rule: bc
+location size: 2
+
+gradient (before regularizer): 0.04503893
+upos (before regularizer): -0.39474483
+uneg (before regularizer): 0.43978376
+tau: 0.07624040
+ !next.empty()
+current ngram rule: bcd
+location size: 2
+
+gradient (before regularizer): 0.04503893
+upos (before regularizer): -0.39474483
+uneg (before regularizer): 0.43978376
+tau: 0.07624040
+current ngram rule: bd
+location size: 1
+
+gradient (before regularizer): 0.42339898
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.42339898
+tau: 0.07624040
+gradient after regularizer: 0.05662524
+existing feature starting with current ngram rule prefix: bd, -0.20846717,  sign: -1
+current_upos: -0.36677374
+current_uneg: 0.05662524
+tau: 0.07624040
+current ngram rule: c
+location size: 2
+
+gradient (before regularizer): 0.04503893
+upos (before regularizer): -0.39474483
+uneg (before regularizer): 0.43978376
+tau: 0.07624040
+ !next.empty()
+current ngram rule: cd
+location size: 2
+
+gradient (before regularizer): 0.04503893
+upos (before regularizer): -0.39474483
+uneg (before regularizer): 0.43978376
+tau: 0.07624040
+current ngram rule: d
+location size: 3
+
+gradient (before regularizer): 0.46843791
+upos (before regularizer): -0.39474483
+uneg (before regularizer): 0.86318274
+tau: 0.07624040
+gradient after regularizer: 0.07480614
+existing feature starting with current ngram rule prefix: d, -0.24203971,  sign: -1
+current_upos: -0.78837659
+current_uneg: 0.46955097
+tau: 0.07624040
+found best ngram! 
+rule.gradient: -0.07624040 (per iter: 0 seconds; 0.00000000 minutes; total time:0.00000000 minutes)
+rule.ngram: abc
+rule.gradient: -0.07624040
+exponent of epsilon: 1.00000000
+epsilon: 0.00100000
+n: 0
+n: 1
+n: 2
+n: 3
+n: 4
+n: 5
+n: 6
+n: 7
+n: 8
+n: 9
+n: 10
+Finished doubling epsilon! The monotonicity loss_n+1 < loss_n is broken!
+current range size: 1.00983370
+current interpolation iteration: 0
+current interpolation iteration: 1
+current interpolation iteration: 2
+current interpolation iteration: 3
+current interpolation iteration: 4
+current interpolation iteration: 5
+current interpolation iteration: 6
+current interpolation iteration: 7
+current interpolation iteration: 8
+current interpolation iteration: 9
+loss: 2.15368758
+penalty_term: 0.37897361
+15 7 3/0/12 0.03899696 abc
+loss + penalty term: 2.53266120
+current ngram rule: a
+location size: 3
+
+gradient (before regularizer): -0.37742730
+upos (before regularizer): -0.80082628
+uneg (before regularizer): 0.42339898
+tau: 0.00000000
+gradient after regularizer: -0.03518027
+existing feature starting with current ngram rule prefix: a, 0.17780879,  sign: 1
+current_upos: -0.45857925
+current_uneg: 0.76564601
+tau: 0.00000000
+
+current best ngram rule: a
+gradient: -0.03518027
+
+ !next.empty()
+current ngram rule: ab
+location size: 3
+
+gradient (before regularizer): -0.37742730
+upos (before regularizer): -0.80082628
+uneg (before regularizer): 0.42339898
+tau: 0.03518027
+gradient after regularizer: -0.04619184
+existing feature starting with current ngram rule prefix: ab, 0.16404434,  sign: 1
+current_upos: -0.46959081
+current_uneg: 0.75463445
+tau: 0.03518027
+
+current best ngram rule: ab
+gradient: -0.04619184
+
+ !next.empty()
+current ngram rule: abc
+location size: 1
+
+gradient (before regularizer): -0.38546688
+upos (before regularizer): -0.38546688
+uneg (before regularizer): 0.00000000
+tau: 0.04619184
+gradient after regularizer: -0.03576488
+existing feature starting with current ngram rule prefix: abc, 0.18712750,  sign: 1
+current_upos: -0.03576488
+current_uneg: 0.34970200
+tau: 0.04619184
+ !next.empty()
+current ngram rule: abcd
+location size: 1
+
+gradient (before regularizer): -0.38546688
+upos (before regularizer): -0.38546688
+uneg (before regularizer): 0.00000000
+tau: 0.04619184
+gradient after regularizer: -0.04189359
+existing feature starting with current ngram rule prefix: abcd, 0.17946662,  sign: 1
+current_upos: -0.04189359
+current_uneg: 0.34357330
+tau: 0.04619184
+current ngram rule: abd
+location size: 1
+
+gradient (before regularizer): 0.42339898
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.42339898
+tau: 0.04619184
+gradient after regularizer: 0.06325349
+existing feature starting with current ngram rule prefix: abd, -0.20018186,  sign: -1
+current_upos: -0.36014549
+current_uneg: 0.06325349
+tau: 0.04619184
+
+current best ngram rule: abd
+gradient: 0.06325349
+
+current ngram rule: b
+location size: 4
+
+gradient (before regularizer): 0.06235646
+upos (before regularizer): -0.80082628
+uneg (before regularizer): 0.86318274
+tau: 0.06325349
+gradient after regularizer: 0.06235646
+existing feature starting with current ngram rule prefix: bd, -0.20846717,  sign: -1
+current_upos: -1.16760002
+current_uneg: 0.49640900
+tau: 0.06325349
+ !next.empty()
+current ngram rule: bc
+location size: 2
+
+gradient (before regularizer): 0.05431688
+upos (before regularizer): -0.38546688
+uneg (before regularizer): 0.43978376
+tau: 0.06325349
+ !next.empty()
+current ngram rule: bcd
+location size: 2
+
+gradient (before regularizer): 0.05431688
+upos (before regularizer): -0.38546688
+uneg (before regularizer): 0.43978376
+tau: 0.06325349
+current ngram rule: bd
+location size: 1
+
+gradient (before regularizer): 0.42339898
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.42339898
+tau: 0.06325349
+gradient after regularizer: 0.05662524
+existing feature starting with current ngram rule prefix: bd, -0.20846717,  sign: -1
+current_upos: -0.36677374
+current_uneg: 0.05662524
+tau: 0.06325349
+current ngram rule: c
+location size: 2
+
+gradient (before regularizer): 0.05431688
+upos (before regularizer): -0.38546688
+uneg (before regularizer): 0.43978376
+tau: 0.06325349
+ !next.empty()
+current ngram rule: cd
+location size: 2
+
+gradient (before regularizer): 0.05431688
+upos (before regularizer): -0.38546688
+uneg (before regularizer): 0.43978376
+tau: 0.06325349
+current ngram rule: d
+location size: 3
+
+gradient (before regularizer): 0.47771586
+upos (before regularizer): -0.38546688
+uneg (before regularizer): 0.86318274
+tau: 0.06325349
+gradient after regularizer: 0.08408409
+existing feature starting with current ngram rule prefix: d, -0.24203971,  sign: -1
+current_upos: -0.77909865
+current_uneg: 0.46955097
+tau: 0.06325349
+
+current best ngram rule: d
+gradient: 0.08408409
+
+found best ngram! 
+rule.gradient: 0.08408409 (per iter: 0 seconds; 0.00000000 minutes; total time:0.00000000 minutes)
+rule.ngram: d
+rule.gradient: 0.08408409
+exponent of epsilon: 1.00000000
+epsilon: 0.00100000
+n: 0
+n: 1
+n: 2
+n: 3
+n: 4
+n: 5
+n: 6
+n: 7
+n: 8
+n: 9
+Finished doubling epsilon! The monotonicity loss_n+1 < loss_n is broken!
+current range size: 0.53558287
+current interpolation iteration: 0
+current interpolation iteration: 1
+current interpolation iteration: 2
+current interpolation iteration: 3
+current interpolation iteration: 4
+current interpolation iteration: 5
+current interpolation iteration: 6
+current interpolation iteration: 7
+current interpolation iteration: 8
+loss: 2.14080821
+penalty_term: 0.39011659
+16 7 4/0/12 -0.02753754 d
+loss + penalty term: 2.53092480
+current ngram rule: a
+location size: 3
+
+gradient (before regularizer): -0.39067891
+upos (before regularizer): -0.80736966
+uneg (before regularizer): 0.41669075
+tau: 0.00000000
+gradient after regularizer: -0.04843187
+existing feature starting with current ngram rule prefix: a, 0.17780879,  sign: 1
+current_upos: -0.46512262
+current_uneg: 0.75893778
+tau: 0.00000000
+
+current best ngram rule: a
+gradient: -0.04843187
+
+ !next.empty()
+current ngram rule: ab
+location size: 3
+
+gradient (before regularizer): -0.39067891
+upos (before regularizer): -0.80736966
+uneg (before regularizer): 0.41669075
+tau: 0.04843187
+gradient after regularizer: -0.05944344
+existing feature starting with current ngram rule prefix: ab, 0.16404434,  sign: 1
+current_upos: -0.47613419
+current_uneg: 0.74792622
+tau: 0.04843187
+
+current best ngram rule: ab
+gradient: -0.05944344
+
+ !next.empty()
+current ngram rule: abc
+location size: 1
+
+gradient (before regularizer): -0.39201026
+upos (before regularizer): -0.39201026
+uneg (before regularizer): 0.00000000
+tau: 0.05944344
+gradient after regularizer: -0.04230825
+existing feature starting with current ngram rule prefix: abc, 0.18712750,  sign: 1
+current_upos: -0.04230825
+current_uneg: 0.34970200
+tau: 0.05944344
+ !next.empty()
+current ngram rule: abcd
+location size: 1
+
+gradient (before regularizer): -0.39201026
+upos (before regularizer): -0.39201026
+uneg (before regularizer): 0.00000000
+tau: 0.05944344
+gradient after regularizer: -0.04843696
+existing feature starting with current ngram rule prefix: abcd, 0.17946662,  sign: 1
+current_upos: -0.04843696
+current_uneg: 0.34357330
+tau: 0.05944344
+current ngram rule: abd
+location size: 1
+
+gradient (before regularizer): 0.41669075
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.41669075
+tau: 0.05944344
+gradient after regularizer: 0.05654526
+existing feature starting with current ngram rule prefix: abd, -0.20018186,  sign: -1
+current_upos: -0.36014549
+current_uneg: 0.05654526
+tau: 0.05944344
+current ngram rule: b
+location size: 4
+
+gradient (before regularizer): 0.04233198
+upos (before regularizer): -0.80736966
+uneg (before regularizer): 0.84970163
+tau: 0.05944344
+gradient after regularizer: 0.04233198
+existing feature starting with current ngram rule prefix: bd, -0.20846717,  sign: -1
+current_upos: -1.17414339
+current_uneg: 0.48292790
+tau: 0.05944344
+ !next.empty()
+current ngram rule: bc
+location size: 2
+
+gradient (before regularizer): 0.04100063
+upos (before regularizer): -0.39201026
+uneg (before regularizer): 0.43301088
+tau: 0.05944344
+ !next.empty()
+current ngram rule: bcd
+location size: 2
+
+gradient (before regularizer): 0.04100063
+upos (before regularizer): -0.39201026
+uneg (before regularizer): 0.43301088
+tau: 0.05944344
+current ngram rule: bd
+location size: 1
+
+gradient (before regularizer): 0.41669075
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.41669075
+tau: 0.05944344
+gradient after regularizer: 0.04991701
+existing feature starting with current ngram rule prefix: bd, -0.20846717,  sign: -1
+current_upos: -0.36677374
+current_uneg: 0.04991701
+tau: 0.05944344
+current ngram rule: c
+location size: 2
+
+gradient (before regularizer): 0.04100063
+upos (before regularizer): -0.39201026
+uneg (before regularizer): 0.43301088
+tau: 0.05944344
+ !next.empty()
+current ngram rule: cd
+location size: 2
+
+gradient (before regularizer): 0.04100063
+upos (before regularizer): -0.39201026
+uneg (before regularizer): 0.43301088
+tau: 0.05944344
+current ngram rule: d
+location size: 3
+
+gradient (before regularizer): 0.45769138
+upos (before regularizer): -0.39201026
+uneg (before regularizer): 0.84970163
+tau: 0.05944344
+gradient after regularizer: 0.04202958
+existing feature starting with current ngram rule prefix: d, -0.26957725,  sign: -1
+current_upos: -0.80767205
+current_uneg: 0.43403984
+tau: 0.05944344
+found best ngram! 
+rule.gradient: -0.05944344 (per iter: 0 seconds; 0.00000000 minutes; total time:0.00000000 minutes)
+rule.ngram: ab
+rule.gradient: -0.05944344
+exponent of epsilon: 1.00000000
+epsilon: 0.00100000
+n: 0
+n: 1
+n: 2
+n: 3
+n: 4
+n: 5
+n: 6
+n: 7
+n: 8
+n: 9
+Finished doubling epsilon! The monotonicity loss_n+1 < loss_n is broken!
+current range size: 0.40653493
+current interpolation iteration: 0
+current interpolation iteration: 1
+current interpolation iteration: 2
+current interpolation iteration: 3
+current interpolation iteration: 4
+current interpolation iteration: 5
+current interpolation iteration: 6
+current interpolation iteration: 7
+loss: 2.13331737
+penalty_term: 0.39673721
+17 7 2/0/12 0.01952717 ab
+loss + penalty term: 2.53005457
+current ngram rule: a
+location size: 3
+
+gradient (before regularizer): -0.37654701
+upos (before regularizer): -0.79799160
+uneg (before regularizer): 0.42144460
+tau: 0.00000000
+gradient after regularizer: -0.03429997
+existing feature starting with current ngram rule prefix: a, 0.17780879,  sign: 1
+current_upos: -0.45574457
+current_uneg: 0.76369163
+tau: 0.00000000
+
+current best ngram rule: a
+gradient: -0.03429997
+
+ !next.empty()
+current ngram rule: ab
+location size: 3
+
+gradient (before regularizer): -0.37654701
+upos (before regularizer): -0.79799160
+uneg (before regularizer): 0.42144460
+tau: 0.03429997
+gradient after regularizer: -0.02968980
+existing feature starting with current ngram rule prefix: ab, 0.18357151,  sign: 1
+current_upos: -0.45113440
+current_uneg: 0.76830180
+tau: 0.03429997
+ !next.empty()
+current ngram rule: abc
+location size: 1
+
+gradient (before regularizer): -0.38736613
+upos (before regularizer): -0.38736613
+uneg (before regularizer): 0.00000000
+tau: 0.03429997
+gradient after regularizer: -0.03766412
+existing feature starting with current ngram rule prefix: abc, 0.18712750,  sign: 1
+current_upos: -0.03766412
+current_uneg: 0.34970200
+tau: 0.03429997
+
+current best ngram rule: abc
+gradient: -0.03766412
+
+ !next.empty()
+current ngram rule: abcd
+location size: 1
+
+gradient (before regularizer): -0.38736613
+upos (before regularizer): -0.38736613
+uneg (before regularizer): 0.00000000
+tau: 0.03766412
+gradient after regularizer: -0.04379283
+existing feature starting with current ngram rule prefix: abcd, 0.17946662,  sign: 1
+current_upos: -0.04379283
+current_uneg: 0.34357330
+tau: 0.03766412
+
+current best ngram rule: abcd
+gradient: -0.04379283
+
+current ngram rule: abd
+location size: 1
+
+gradient (before regularizer): 0.42144460
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.42144460
+tau: 0.04379283
+gradient after regularizer: 0.06129911
+existing feature starting with current ngram rule prefix: abd, -0.20018186,  sign: -1
+current_upos: -0.36014549
+current_uneg: 0.06129911
+tau: 0.04379283
+
+current best ngram rule: abd
+gradient: 0.06129911
+
+current ngram rule: b
+location size: 4
+
+gradient (before regularizer): 0.05646388
+upos (before regularizer): -0.79799160
+uneg (before regularizer): 0.85445548
+tau: 0.06129911
+gradient after regularizer: 0.05646388
+existing feature starting with current ngram rule prefix: bd, -0.20846717,  sign: -1
+current_upos: -1.16476534
+current_uneg: 0.48768175
+tau: 0.06129911
+ !next.empty()
+current ngram rule: bc
+location size: 2
+
+gradient (before regularizer): 0.04564476
+upos (before regularizer): -0.38736613
+uneg (before regularizer): 0.43301088
+tau: 0.06129911
+ !next.empty()
+current ngram rule: bcd
+location size: 2
+
+gradient (before regularizer): 0.04564476
+upos (before regularizer): -0.38736613
+uneg (before regularizer): 0.43301088
+tau: 0.06129911
+current ngram rule: bd
+location size: 1
+
+gradient (before regularizer): 0.42144460
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.42144460
+tau: 0.06129911
+gradient after regularizer: 0.05467086
+existing feature starting with current ngram rule prefix: bd, -0.20846717,  sign: -1
+current_upos: -0.36677374
+current_uneg: 0.05467086
+tau: 0.06129911
+current ngram rule: c
+location size: 2
+
+gradient (before regularizer): 0.04564476
+upos (before regularizer): -0.38736613
+uneg (before regularizer): 0.43301088
+tau: 0.06129911
+ !next.empty()
+current ngram rule: cd
+location size: 2
+
+gradient (before regularizer): 0.04564476
+upos (before regularizer): -0.38736613
+uneg (before regularizer): 0.43301088
+tau: 0.06129911
+current ngram rule: d
+location size: 3
+
+gradient (before regularizer): 0.46708935
+upos (before regularizer): -0.38736613
+uneg (before regularizer): 0.85445548
+tau: 0.06129911
+gradient after regularizer: 0.05142756
+existing feature starting with current ngram rule prefix: d, -0.26957725,  sign: -1
+current_upos: -0.80302792
+current_uneg: 0.43879369
+tau: 0.06129911
+found best ngram! 
+rule.gradient: 0.06129911 (per iter: 0 seconds; 0.00000000 minutes; total time:0.00000000 minutes)
+rule.ngram: abd
+rule.gradient: 0.06129911
+exponent of epsilon: 1.00000000
+epsilon: 0.00100000
+n: 0
+n: 1
+n: 2
+n: 3
+n: 4
+n: 5
+n: 6
+n: 7
+n: 8
+n: 9
+n: 10
+Finished doubling epsilon! The monotonicity loss_n+1 < loss_n is broken!
+current range size: 1.18351015
+current interpolation iteration: 0
+current interpolation iteration: 1
+current interpolation iteration: 2
+current interpolation iteration: 3
+current interpolation iteration: 4
+current interpolation iteration: 5
+current interpolation iteration: 6
+current interpolation iteration: 7
+current interpolation iteration: 8
+current interpolation iteration: 9
+current interpolation iteration: 10
+loss: 2.12022284
+penalty_term: 0.40842263
+18 7 4/0/12 -0.03135449 abd
+loss + penalty term: 2.52864546
+current ngram rule: a
+location size: 3
+
+gradient (before regularizer): -0.38417273
+upos (before regularizer): -0.79799160
+uneg (before regularizer): 0.41381887
+tau: 0.00000000
+gradient after regularizer: -0.04192570
+existing feature starting with current ngram rule prefix: a, 0.17780879,  sign: 1
+current_upos: -0.45574457
+current_uneg: 0.75606590
+tau: 0.00000000
+
+current best ngram rule: a
+gradient: -0.04192570
+
+ !next.empty()
+current ngram rule: ab
+location size: 3
+
+gradient (before regularizer): -0.38417273
+upos (before regularizer): -0.79799160
+uneg (before regularizer): 0.41381887
+tau: 0.04192570
+gradient after regularizer: -0.03731553
+existing feature starting with current ngram rule prefix: ab, 0.18357151,  sign: 1
+current_upos: -0.45113440
+current_uneg: 0.76067607
+tau: 0.04192570
+ !next.empty()
+current ngram rule: abc
+location size: 1
+
+gradient (before regularizer): -0.38736613
+upos (before regularizer): -0.38736613
+uneg (before regularizer): 0.00000000
+tau: 0.04192570
+gradient after regularizer: -0.03766412
+existing feature starting with current ngram rule prefix: abc, 0.18712750,  sign: 1
+current_upos: -0.03766412
+current_uneg: 0.34970200
+tau: 0.04192570
+ !next.empty()
+current ngram rule: abcd
+location size: 1
+
+gradient (before regularizer): -0.38736613
+upos (before regularizer): -0.38736613
+uneg (before regularizer): 0.00000000
+tau: 0.04192570
+gradient after regularizer: -0.04379283
+existing feature starting with current ngram rule prefix: abcd, 0.17946662,  sign: 1
+current_upos: -0.04379283
+current_uneg: 0.34357330
+tau: 0.04192570
+
+current best ngram rule: abcd
+gradient: -0.04379283
+
+current ngram rule: abd
+location size: 1
+
+gradient (before regularizer): 0.41381887
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.41381887
+tau: 0.04379283
+gradient after regularizer: 0.02858978
+existing feature starting with current ngram rule prefix: abd, -0.23153636,  sign: -1
+current_upos: -0.38522909
+current_uneg: 0.02858978
+tau: 0.04379283
+current ngram rule: b
+location size: 4
+
+gradient (before regularizer): 0.04883815
+upos (before regularizer): -0.79799160
+uneg (before regularizer): 0.84682975
+tau: 0.04379283
+gradient after regularizer: 0.04883815
+existing feature starting with current ngram rule prefix: bd, -0.20846717,  sign: -1
+current_upos: -1.16476534
+current_uneg: 0.48005602
+tau: 0.04379283
+
+current best ngram rule: b
+gradient: 0.04883815
+
+ !next.empty()
+current ngram rule: bc
+location size: 2
+
+gradient (before regularizer): 0.04564476
+upos (before regularizer): -0.38736613
+uneg (before regularizer): 0.43301088
+tau: 0.04883815
+ !next.empty()
+current ngram rule: bcd
+location size: 2
+
+gradient (before regularizer): 0.04564476
+upos (before regularizer): -0.38736613
+uneg (before regularizer): 0.43301088
+tau: 0.04883815
+current ngram rule: bd
+location size: 1
+
+gradient (before regularizer): 0.41381887
+upos (before regularizer): 0.00000000
+uneg (before regularizer): 0.41381887
+tau: 0.04883815
+gradient after regularizer: 0.04704513
+existing feature starting with current ngram rule prefix: bd, -0.20846717,  sign: -1
+current_upos: -0.36677374
+current_uneg: 0.04704513
+tau: 0.04883815
+current ngram rule: c
+location size: 2
+
+gradient (before regularizer): 0.04564476
+upos (before regularizer): -0.38736613
+uneg (before regularizer): 0.43301088
+tau: 0.04883815
+ !next.empty()
+current ngram rule: cd
+location size: 2
+
+gradient (before regularizer): 0.04564476
+upos (before regularizer): -0.38736613
+uneg (before regularizer): 0.43301088
+tau: 0.04883815
+current ngram rule: d
+location size: 3
+
+gradient (before regularizer): 0.45946363
+upos (before regularizer): -0.38736613
+uneg (before regularizer): 0.84682975
+tau: 0.04883815
+gradient after regularizer: 0.04380183
+existing feature starting with current ngram rule prefix: d, -0.26957725,  sign: -1
+current_upos: -0.80302792
+current_uneg: 0.43116796
+tau: 0.04883815
+found best ngram! 
+rule.gradient: 0.04883815 (per iter: 0 seconds; 0.00000000 minutes; total time:0.00000000 minutes)
+rule.ngram: b
+rule.gradient: 0.04883815
+exponent of epsilon: 1.00000000
+epsilon: 0.00100000
+n: 0
+Finished doubling epsilon! The monotonicity loss_n+1 < loss_n is broken!
+current range size: 0.00019535
+loss: 2.12022284
+penalty_term: 0.40842263
+
+Finish iterations due to: no change in loss value!
+loss + penalty term: 2.52864546
+# iterations: 20
+end penalty_term: 0.40842263
+end loss + penalty_term: 2.52864546
+
+total time: 0 seconds; 0.00000000 minutes
+ echo
+
+./seql_mkmodel -i seql.toy.char.model -o seql.toy.char.model.bin -O seql.toy.char.model.predictors
+Total: 7 rule(s)
+l1_norm: 1.43756, l2_norm: 1.0996
+echo
+
+./seql_classify -n 1 -v 4 -t 0 data/toy.char.test seql.toy.char.model.bin	
+<instance>
+1 0.763112 0.682029 abc
+
+rule: -0 __DFAULT__
+rule: a 0.247377
+rule: ab 0.255394
+rule: abc 0.260341
+</instance>
+<instance>
+1 -0.127673 0.468125 ada
+
+rule: -0 __DFAULT__
+rule: a 0.247377
+rule: d -0.37505
+</instance>
+<instance>
+-1 -0.417703 0.397067 bda
+
+rule: -0 __DFAULT__
+rule: a 0.247377
+rule: bd -0.29003
+rule: d -0.37505
+</instance>
+
+ Test doc out of vocabulary
+<instance>
+-1 -0 0.5 bc
+
+rule: -0 __DFAULT__
+</instance>
+Classif Threshold:   -0.00000%
+Accuracy:   75.00000% (3/4)
+Error:	  25.00000% (1/4)
+Balanced Error:	  25.00000%
+AUC:		  75.00000%
+AUC50:	  3.00000%
+Precision:  100.00000% (1/1)
+Recall:     50.00000% (1/2)
+F1:         66.66667%
+Specificity:  100.00000% (2/2)
+Sensitivity:     50.00000% (1/2)
+FSS:         66.66667%
+System/Answer p/p p/n n/p n/n: 1 0 1 2
+OOV docs:   1
+end classification( 0 seconds; 0 minutes )

@@ -1,0 +1,30 @@
+Updated 23.05.2011
+------------------
+
+Fixed bug wrt word-level tokenization.
+
+This SEQL version has additional stopping criteria (besides conv_threshold also use threshold on weight of max gradient feature).
+
+Changes:
+in seql_learn.cpp
+-----------------
+in can_prune() use ngram = t->ne + ngram instead of reversed_ngram to retrieve ngram from trie going backwards
+in span_bfs and span_dfs change the candidate search procedure for word-level tokenization and char-level tokenization
+change the best ngram to have spaces when using word-tokens
+change the step size found by the line search to full step rather than the cautious 0.5 full_step as before.
+
+set C=1 and alpha=0.2 by default (0.2 * l1 + 0.8 * l2)
+
+in seql_classify_tune_thereshold_min_errors
+-------------------------------------------
+output the best threshold instead of the bias
+modify project() such that search trie for word tokens or char-tokens (before worked for char-only)
+
+in seql_classify.cpp
+--------------------
+take classif_thereshold as input and initilise bias=-threshold
+modify project() to work for work-tokens and char-tokens as well (takes token_type as parameter)
+by default use a threshold=0=bias, rather than the one computed during seql_mkmodel
+
+Checked that code has the same behaviour as seqlv1.0-online, when not changing the line search step size to full, rather than 0.5.
+In the new version, step size is full.

@@ -13,8 +13,9 @@ Installation
     * Requirements
           o C++ compiler (gcc 3.4 or higher)
           o POSIX getopt library.
-    
-    * To install SEQL download seqlv2.0.tar.gz and unpack it with
+    *
+
+      To install SEQL download seqlv2.0.tar.gz and unpack it with
 
       tar -zxvf seql-v2.0.tar.gz
         Execute
@@ -107,14 +108,16 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
 
+Acknowledgements
+————————————————
+Many thanks to Dan Søndergaard for his patch of darts.h and related files.
+
+
 References
 ----------
-B. P. Pedersen, G. Ifrim, P. Liboriussen, K. B. Axelsen, M. G. Palmgren, P. Nissen, C. Wiuf, C. N. S. Pedersen:
-"Large Scale Identification and Categorization of Protein Sequences Using Structured Logistic Regression", PloS One Journal, 2014.
+G. Ifrim: "Sequence Classification in High Dimensional Predictor Space", Cork Constraint Computation Centre, Seminar Talk, 2011 (slides)
 
-G. Ifrim: "Sequence Classification in High Dimensional Predictor Space", Cork Constraint Computation Centre, Seminar Talk, 2011.
+G. Ifrim, C. Wiuf: "Bounded Coordinate-Descent for Biological Sequence Classification in High Dimensional Predictor Space", SIGKDD 2011. (pdf available soon, for now please consider earlier version, 2010, arXiv:1008.0528)
 
-G. Ifrim, C. Wiuf: "Bounded Coordinate-Descent for Biological Sequence Classification in High Dimensional Predictor Space", SIGKDD 2011.
-
-G. Ifrim, G. Bakir, G. Weikum: "Fast Logistic Regression for Text Categorization with Variable-Length N-grams", SIGKDD 2008. 
+G. Ifrim, G. Bakir, G. Weikum: "Fast Logistic Regression for Text Categorization with Variable-Length N-grams", SIGKDD 2008. (paper, slides)
 

@@ -122,7 +122,7 @@ public:
 	    char *ptr = mmap.begin ();
 	    unsigned int size = 0;
 	    read_static<unsigned int>(&ptr, size);
-	    da.setArray (ptr);
+	    da.set_array (ptr);
 	    ptr += size;
 	    read_static<double>(&ptr, bias);
 	    alpha = (double *)ptr;
@@ -170,7 +170,8 @@ public:
 
 	    for (unsigned int i = 0; i < doc.size(); ++i) {
 	       std::string item = doc[i].key();
-	       int id = da.exactMatchSearch (item.c_str());
+	       int id;
+         da.exactMatchSearch (item.c_str(), id);
 	       //cout << "\ndoc[i]: " << doc[i].key();
 	       //cout << "\nid: " << id;
 	       if (id == -2) continue;

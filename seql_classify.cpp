@@ -136,12 +136,12 @@ public:
     char *ptr = mmap.begin ();
     unsigned int size = 0;
     read_static<unsigned int>(&ptr, size);
-    da.setArray (ptr);
+    da.set_array (ptr);
     ptr += size;
-    read_static<double>(&ptr, bias);    // this bias from the model file is not used for classif; it is automatically obtained by summing 
+    read_static<double>(&ptr, bias);    // this bias from the model file is not used for classif; it is automatically obtained by summing
 					// up the features of the model and it is used for info only
     bias = -threshold;  //set bias to minus user-provided-thereshold
-    
+
     alpha = (double *)ptr;
 
     return true;
@@ -192,7 +192,7 @@ public:
     {
     	double score = ritr->first;
         int label = ritr->second;
-        
+
         if( score != prevscore && x < 50) {
             area50 += (x-xbreak)*(y+ybreak)/2.0;
             xbreak = x;
@@ -207,7 +207,7 @@ public:
     else        area50 = 100.0 * area50 /( 50*y );
     return area50;
   }
-  
+
   double classify (const char *line, bool token_type)
   {
     result.clear ();
@@ -220,13 +220,14 @@ public:
 
     for (unsigned int i = 0; i < doc.size(); ++i) {
     	std::string item = doc[i].key();
-	    int id = da.exactMatchSearch (item.c_str());
+	    int id;
+      da.exactMatchSearch (item.c_str(), id);
     	//int id = da.exactMatchSearch (doc[i].key().c_str());
        	if (id == -2) continue;
        	if (id >= 0) {
 			if (userule) {
 		   		rules.insert (std::make_pair <std::string, double> (doc[i].key(), alpha[id]));
-				rules_and_ids.insert (std::make_pair <std::string, int> (doc[i].key(), id));			
+				rules_and_ids.insert (std::make_pair <std::string, int> (doc[i].key(), id));
 			}
 		 	result.push_back (id);
        	}
@@ -339,7 +340,7 @@ int main (int argc, char **argv)
   char *column[4];
   // Predicted and true scores for all docs.
   vector<pair<double, int> > scores;
-    
+
   unsigned int all = 0;
   unsigned int correct = 0;
   unsigned int res_a = 0;
@@ -414,7 +415,7 @@ int main (int argc, char **argv)
 
    double specificity = 1.0 * res_d/(res_d + res_b);
    if (res_d + res_b == 0) specificity = 0;
-   // sensitivity = recall	
+   // sensitivity = recall
    double sensitivity  = 1.0 * res_a/(res_a + res_c);
    if (res_a + res_c == 0) sensitivity = 0;
    double fss =  2 * specificity * sensitivity / (specificity + sensitivity);
@@ -425,7 +426,7 @@ int main (int argc, char **argv)
    double AUC = seql.calcROC(scores);
    double AUC50 = seql.calcROC50(scores);
    double balanced_error = 0.5 * ((1.0 * res_c / (res_a + res_c)) + (1.0 * res_b / (res_b + res_d)));
-   
+
 	//if (verbose >= 3) {
 		std::printf ("Classif Threshold:   %.5f\n", -seql.getBias());
 	   	std::printf ("Accuracy:   %.5f%% (%d/%d)\n", 100.0 * correct / all , correct, all);

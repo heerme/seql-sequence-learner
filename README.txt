@@ -1,3 +1,13 @@
+Description
+————————————
+This page describes the usage of the SEQL (SEQuence Learner) software and gives links to open source code and sequence data. 
+This tool has been used for text and biological sequence classification (see References section, PlosOne14, KDD11, KDD08), but can be applied to any string classification task.
+
+SEQL is an implementation of a greedy coordinate-wise gradient descent technique for efficiently learning sequence classifiers.
+
+The theoretical framework is based on discriminative sequence classification where linear classifiers work directly in the high dimensional predictor space of all subsequences in the training set (as opposed to string-kernel-induced feature spaces). This is computationally challenging, but made feasible by employing a greedy coordinate-descent algorithm coupled with bounding the magnitude of the gradient for efficiently selecting discriminative subsequences. Logistic regression (binomial log-likelihood loss) and support vector machines (squared hinge loss) are currently implemented. 
+
+
 Installation
 ---------------
     * Requirements

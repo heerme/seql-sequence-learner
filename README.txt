@@ -117,12 +117,13 @@ References
 ----------
 
 B. P. Pedersen, G. Ifrim, P. Liboriussen, K. B. Axelsen, M. G. Palmgren, P. Nissen, C. Wiuf, C. N. S. Pedersen
-Large scale identification and categorization of protein sequences using Structured Logistic Regression (PlosOne14)
+“Large scale identification and categorization of protein sequences using Structured Logistic Regression” (PlosOne14)
  
 G. Ifrim, C. Wiuf
-Bounded Coordinate-Descent for Biological Sequence Classification in High Dimensional Predictor Space (KDD 2011)
+“Bounded Coordinate-Descent for Biological Sequence Classification in High Dimensional Predictor Space” (KDD 2011)
 
-G. Ifrim: "Sequence Classification in High Dimensional Predictor Space", Cork Constraint Computation Centre, Seminar Talk, 2011.
+G. Ifrim: 
+“Sequence Classification in High Dimensional Predictor Space", Cork Constraint Computation Centre, Seminar Talk, 2011.
 
 
 G. Ifrim, G. Bakir, G. Weikum: "Fast Logistic Regression for Text Categorization with Variable-Length N-grams", (KDD 2008)

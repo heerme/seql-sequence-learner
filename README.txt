@@ -61,7 +61,7 @@ Please be aware of setting the parameter [-n: 0 or 1] for the token representati
     [-n token type: 0 or 1] Word or character-level token. Words are delimited by white spaces. By default
      set to 1, character-level tokens.
     [-r traversal strategy: 0 or 1] Breadth First Search or Depth First Search traversal of the search tree.
-     By default set to DFS.
+     By default set to BFS.
     [-c convergence threshold >= 0] Stopping threshold based on change in aggregated score predictions.
      By default set to 0.005.
     [-T maxitr] Number of optimization iterations. By default set to the maximum between 5,000
@@ -115,9 +115,14 @@ Many thanks to Dan Søndergaard for his patch of darts.h and related files.
 
 References
 ----------
-G. Ifrim: "Sequence Classification in High Dimensional Predictor Space", Cork Constraint Computation Centre, Seminar Talk, 2011 (slides)
 
-G. Ifrim, C. Wiuf: "Bounded Coordinate-Descent for Biological Sequence Classification in High Dimensional Predictor Space", SIGKDD 2011. (pdf available soon, for now please consider earlier version, 2010, arXiv:1008.0528)
+B. P. Pedersen, G. Ifrim, P. Liboriussen, K. B. Axelsen, M. G. Palmgren, P. Nissen, C. Wiuf, C. N. S. Pedersen
+Large scale identification and categorization of protein sequences using Structured Logistic Regression (PlosOne14)
+ 
+G. Ifrim, C. Wiuf
+Bounded Coordinate-Descent for Biological Sequence Classification in High Dimensional Predictor Space (KDD 2011)
 
-G. Ifrim, G. Bakir, G. Weikum: "Fast Logistic Regression for Text Categorization with Variable-Length N-grams", SIGKDD 2008. (paper, slides)
+G. Ifrim: "Sequence Classification in High Dimensional Predictor Space", Cork Constraint Computation Centre, Seminar Talk, 2011.
 
+
+G. Ifrim, G. Bakir, G. Weikum: "Fast Logistic Regression for Text Categorization with Variable-Length N-grams", (KDD 2008)

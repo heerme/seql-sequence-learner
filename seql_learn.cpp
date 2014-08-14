@@ -213,11 +213,21 @@ bool read (const char *filename) {
   	unsigned int num_neg = 0;
   	string doc;
 
-	std::ifstream ifs (filename);
+  std::istream *ifs = 0;
+  if (!strcmp(filename, "-")) {
+    ifs = &std::cin;
+  } else {
+    ifs = new std::ifstream(filename);
+    if (!*ifs) {
+      std::cerr << "seql_learn" << " " << filename << " No such file or directory" << std::endl;
+      return -1;
+    }
+  }
+
 	if (! ifs) return false;
 	cout << "\n\nread() input data....";
 
-	while (ifs.getline (line, kMaxLineSize)) {
+	while (ifs->getline (line, kMaxLineSize)) {
 		if (line[0] == '\0' || line[0] == ';') continue;
 	if (line[strlen(line) - 1 ] == '\r')
 	  	line[strlen(line) - 1 ] = '\0';

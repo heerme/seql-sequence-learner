@@ -97,7 +97,7 @@ private:
 	  		   	if (id >= 0) {
 				  if (userule) {
 					//cout << "\nnew rule: " << item;
-					rules.insert (std::make_pair <std::string, double> (item, alpha[id]));
+					rules.insert (std::make_pair (item, alpha[id]));
 				  }
 				  result.push_back (id);
 				}
@@ -178,7 +178,7 @@ public:
 	       if (id >= 0) {
 			 if (userule) {
 			  	//cout << "\nnew rule: " << doc[i].key();
-			   	rules.insert (std::make_pair <std::string, double> (doc[i].key(), alpha[id]));
+			   	rules.insert (std::make_pair (doc[i].key(), alpha[id]));
 			 }
 			 result.push_back (id);
 	       }
@@ -199,7 +199,7 @@ public:
 	    std::vector <std::pair <std::string, double> > tmp;
 
 	    for (std::map <std::string, double>::iterator it = rules.begin(); it != rules.end(); ++it)
-	    	tmp.push_back (std::make_pair <std::string, double> (it->first,  it->second));
+	    	tmp.push_back (std::make_pair (it->first,  it->second));
 
 	    std::sort (tmp.begin(), tmp.end(), pair_2nd_cmp<std::string, double>());
 

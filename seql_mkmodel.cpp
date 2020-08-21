@@ -114,7 +114,7 @@ int main (int argc, char **argv)
     double a = it->second / alpha_sum;
     l2_norm += 	pow(it->second, 2);
 
-    ary2.push_back (std::make_pair <const char*, double>(it->first.c_str(), a));
+    ary2.push_back (std::make_pair(it->first.c_str(), a));
     ary.push_back  ((Darts::DoubleArray::key_type *)it->first.c_str());
     alpha.push_back (a);
   }
